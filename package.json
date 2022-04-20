@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "format": "prettier -w src/*.{ts,vue} && prettier -w src/**/*.{ts,vue}",
+    "format": "prettier -w src/*.{js,vue} && prettier -w src/**/*.{js,vue}",
     "fix": "npm run format && npm run lint"
   },
   "dependencies": {
@@ -14,7 +14,8 @@
     "bootstrap-icons": "^1.8.1",
     "core-js": "^3.8.3",
     "daisyui": "^2.14.1",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.14"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

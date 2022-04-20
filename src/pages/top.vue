@@ -4,6 +4,6 @@ import Base from '@/components/layouts/Base'
 
 <template>
   <Base>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <h1 class="text-3xl font-bold underline">google mapを表示</h1>
   </Base>
 </template>

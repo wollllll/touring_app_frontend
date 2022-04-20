@@ -6,7 +6,7 @@ import Footer from '@/components/layouts/Footer'
 <template>
   <div class="flex flex-col h-screen">
     <Header class="lg:px-40 sticky top-0 h-16 shadow" />
-    <main class="lg:px-40 flex-grow">
+    <main class="p-3 lg:px-40 flex-grow">
       <slot />
     </main>
     <Footer class="lg:px-40 sticky bottom-0 h-16 shadow" />

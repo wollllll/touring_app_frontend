@@ -1,7 +1,3 @@
 <template>
-  <Top />
+  <router-view />
 </template>
-
-<script setup>
-import Top from '@/pages/index'
-</script>

@@ -1,13 +1,15 @@
 <template>
-  <header class="grid grid-cols-2">
-    <div class="p-3 flex justify-start items-center">アプリ名</div>
+  <header class="grid grid-cols-2 bg-blue-400">
     <div class="p-3 flex justify-start items-center">
-      <a href="#">
+      <router-link :to="{ name: 'top' }">アプリ名</router-link>
+    </div>
+    <div class="p-3 flex justify-end items-center">
+      <router-link :to="{ name: 'top' }">
         <i class="bi bi-plus-square text-2xl"></i>
-      </a>
-      <a href="#">
+      </router-link>
+      <router-link :to="{ name: 'top' }" class="pl-5">
         <i class="bi bi-list text-3xl"></i>
-      </a>
+      </router-link>
     </div>
   </header>
 </template>
