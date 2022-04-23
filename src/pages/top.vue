@@ -1,17 +1,40 @@
 <script setup>
 import Base from '@/components/layouts/Base'
-import { GoogleMap, Marker } from "vue3-google-map";
-const center = { lat: 40.689247, lng: -74.044502 };
+const center = { lat: 35.0889962, lng: 138.9533645 };
+const markers = [
+  {
+    position: {
+      lat: 35.088996, lng: 138.9533645
+    },
+  }
+]
 const options = {
-  panControl: false
+  fullscreenControl: false,
+  mapTypeControl: false,
+  scaleControl: false,
+  streetViewControl: false,
+  rotateControl: false,
+  disableDefaultUi: false
 }
-const API_KEY = process.env.VUE_APP_GOOGLE_MAP_API_KEY
 </script>
 
 <template>
   <Base>
-    <GoogleMap :api-key="API_KEY" class="w-full h-full" :center="center" :zoom="15" :options="options" map-type-id="terrain">
-      <Marker :options="{ position: center }" />
-    </GoogleMap>
+    <GMapMap
+        :center="center"
+        :zoom="7"
+        map-type-id="terrain"
+        :options="options"
+        class="w-full h-full"
+    >
+      <GMapCluster>
+        <GMapMarker
+            :key="index"
+            v-for="(m, index) in markers"
+            :position="m.position"
+            @click="center=m.position"
+        />
+      </GMapCluster>
+    </GMapMap>
   </Base>
 </template>
