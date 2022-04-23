@@ -2,7 +2,7 @@
   <footer class="grid grid-cols-2">
     <div class="p-3 flex justify-center items-center">
       <router-link :to="{ name: 'top' }">
-        <i class="bi bi-pin-map md:text-2xl " />
+        <i class="bi bi-pin-map md:text-2xl" />
       </router-link>
     </div>
     <div class="p-3 flex justify-center items-center">
