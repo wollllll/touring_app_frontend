@@ -35,7 +35,7 @@ const updateCenter = (marker) => {
       中心を検索
     </button>
     <i
-      class="bi bi-record-circle absolute inset-0 m-auto leading-3 w-3 h-3 text-center"
+      class="bi bi-record-circle absolute inset-0 m-auto leading-3 w-3 h-3 text-center text-xl"
     ></i>
     <div
       class="shadow btn btn-sm btn-outline btn-circle absolute top-3 left-3 rounded-full text-center"
