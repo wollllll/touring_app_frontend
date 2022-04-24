@@ -9,21 +9,21 @@ const spots = [
   {
     id: 1,
     title: '伊豆の吊り橋',
-    image_url: '/img/spot1.881c736e.jpg',
+    image_url: 'img/spot1.jpg',
     latitude: 35.0889962,
     longitude: 138.9533645,
   },
   {
     id: 2,
     title: '伊豆の山',
-    image_url: '/img/spot2.1d47994f.jpg',
+    image_url: 'img/spot2.jpg',
     latitude: 35.0809962,
     longitude: 138.9533645,
   },
   {
     id: 3,
     title: '伊豆の山だ伊豆の山だ伊豆の山だ伊豆の山だ',
-    image_url: '/img/spot2.1d47994f.jpg',
+    image_url: 'img/spot2.jpg',
     latitude: 35.1009962,
     longitude: 138.9533645,
   },
@@ -53,7 +53,7 @@ const updateShowSpot = (spot) => {
       :options="{ position: { lat: spot.latitude, lng: spot.longitude } }"
     />
     <button
-      class="shadow bg-white text-inherit btn btn-sm btn-ghost w-2/3 max-w-xs absolute top-3 inset-x-0 mx-auto text-gray-700"
+      class="shadow text-inherit btn btn-primary btn-sm w-2/3 max-w-xs absolute top-3 inset-x-0 mx-auto"
     >
       中心を検索
     </button>
@@ -61,7 +61,7 @@ const updateShowSpot = (spot) => {
       class="bi bi-record-circle absolute inset-0 m-auto leading-10 w-10 h-10 text-center text-xl"
     ></i>
     <div
-      class="shadow bg-white text-inherit btn btn-ghost btn-sm btn-circle absolute top-3 left-3 rounded-full text-center"
+      class="shadow text-inherit btn btn-primary btn-sm btn-circle absolute top-3 left-3 rounded-full text-center"
     >
       <i class="bi bi-gear text-xl"></i>
     </div>
