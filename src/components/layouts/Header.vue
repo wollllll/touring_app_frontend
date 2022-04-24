@@ -1,11 +1,12 @@
 <script setup>
 const APP_NAME = process.env.VUE_APP_APP_NAME
+console.log(APP_NAME)
 </script>
 
 <template>
   <header class="grid grid-cols-2 bg-blue-300">
     <div class="p-3 flex justify-start items-center">
-      <router-link :to="{ name: 'top' }">{{ APP_NAME }}</router-link>
+      <router-link :to="{ name: 'top' }">アプリ名</router-link>
     </div>
     <div class="p-3 flex justify-end items-center">
       <router-link :to="{ name: 'top' }">
