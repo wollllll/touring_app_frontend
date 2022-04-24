@@ -53,7 +53,7 @@ const updateShowSpot = (spot) => {
       :options="{ position: { lat: spot.latitude, lng: spot.longitude } }"
     />
     <button
-      class="shadow text-inherit btn btn-primary btn-sm w-2/3 max-w-xs absolute top-3 inset-x-0 mx-auto"
+      class="shadow text-inherit btn btn-secondary btn-sm w-2/3 max-w-xs absolute top-3 inset-x-0 mx-auto"
     >
       中心を検索
     </button>
@@ -61,7 +61,7 @@ const updateShowSpot = (spot) => {
       class="bi bi-record-circle absolute inset-0 m-auto leading-10 w-10 h-10 text-center text-xl"
     ></i>
     <div
-      class="shadow text-inherit btn btn-primary btn-sm btn-circle absolute top-3 left-3 rounded-full text-center"
+      class="shadow text-inherit btn btn-secondary btn-sm btn-circle absolute top-3 left-3 rounded-full text-center"
     >
       <i class="bi bi-gear text-xl"></i>
     </div>
