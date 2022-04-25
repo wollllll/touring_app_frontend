@@ -1,6 +1,6 @@
 <script setup>
-import Base from '@/components/layouts/Base'
 import GoogleMap from '@/components/GoogleMap'
+import Base from '@/components/layouts/Base'
 </script>
 
 <template>

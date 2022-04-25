@@ -1,6 +1,6 @@
-import { createStore } from 'vuex'
 import { modal } from '@/store/modal'
 import { spot } from '@/store/spot'
+import { createStore } from 'vuex'
 
 export const store = createStore({
   modules: {

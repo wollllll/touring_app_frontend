@@ -1,7 +1,7 @@
 <script setup>
+import { spotService } from '@/services/spotService'
 import { storeService } from '@/services/storeService'
 import { ref, watch } from 'vue'
-import { spotService } from '@/services/spotService'
 
 const modal = ref('')
 const isShowModal = storeService.getters.isShowModal()

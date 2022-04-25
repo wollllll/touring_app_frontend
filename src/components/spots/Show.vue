@@ -1,6 +1,6 @@
 <script setup>
-import { ref } from 'vue'
 import { spotService } from '@/services/spotService'
+import { ref } from 'vue'
 
 const showSpot = ref(spotService.getters.showSpot())
 </script>
