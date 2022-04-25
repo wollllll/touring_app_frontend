@@ -4,7 +4,7 @@ import { ref } from 'vue'
 import { storeService } from '@/services/storeService'
 import { spots } from '@/fakers/spot'
 import Modal from '@/components/Modal'
-import Information from '@/components/spots/Information'
+import ShowSpot from '@/components/spots/Show'
 import { spotService } from '@/services/spotService'
 
 const API_KEY = process.env.VUE_APP_GOOGLE_MAP_API_KEY
@@ -50,7 +50,7 @@ const showModal = () => storeService.commit.setIsShowModal(true)
     >
       <i class="bi bi-gear text-xl"></i>
     </div>
-    <Information v-if="showSpot.id" @click="showModal" />
+    <ShowSpot v-if="showSpot.id" @click="showModal" />
     <Modal />
   </GoogleMap>
 </template>
