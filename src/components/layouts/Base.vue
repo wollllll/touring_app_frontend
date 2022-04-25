@@ -1,6 +1,5 @@
 <script setup>
 import Header from '@/components/layouts/Header'
-import Footer from '@/components/layouts/Footer'
 </script>
 
 <template>
@@ -9,6 +8,5 @@ import Footer from '@/components/layouts/Footer'
     <main class="lg:px-40 flex-grow" style="height: 84%">
       <slot />
     </main>
-    <Footer class="lg:px-40 shadow" style="height: 8%" />
   </div>
 </template>

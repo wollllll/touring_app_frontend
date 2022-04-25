@@ -1,37 +1,22 @@
 <script setup>
 import { GoogleMap, Marker } from 'vue3-google-map'
 import { ref } from 'vue'
+import { storeService } from '@/services/storeService'
+import { spots } from '@/fakers/spot'
+import Modal from '@/components/Modal'
+import Information from '@/components/spots/Information'
+import { spotService } from '@/services/spotService'
 
 const API_KEY = process.env.VUE_APP_GOOGLE_MAP_API_KEY
 const center = ref({ lat: 35.0889962, lng: 138.9533645 })
-const showSpot = ref({})
-const spots = [
-  {
-    id: 1,
-    title: '伊豆の吊り橋',
-    image_url: 'img/spot1.jpg',
-    latitude: 35.0889962,
-    longitude: 138.9533645,
-  },
-  {
-    id: 2,
-    title: '伊豆の山',
-    image_url: 'img/spot2.jpg',
-    latitude: 35.0809962,
-    longitude: 138.9533645,
-  },
-  {
-    id: 3,
-    title: '伊豆の山だ伊豆の山だ伊豆の山だ伊豆の山だ',
-    image_url: 'img/spot2.jpg',
-    latitude: 35.1009962,
-    longitude: 138.9533645,
-  },
-]
-const updateShowSpot = (spot) => {
+
+const showSpot = ref(spotService.getters.showSpot())
+
+const setShowSpot = (spot) => {
   center.value = { lat: spot.latitude, lng: spot.longitude }
-  showSpot.value = spot
+  spotService.commit.setShowSpot(spot)
 }
+const showModal = () => storeService.commit.setIsShowModal(true)
 </script>
 
 <template>
@@ -47,7 +32,7 @@ const updateShowSpot = (spot) => {
     :keyboardShortcuts="false"
   >
     <Marker
-      @click="updateShowSpot(spot)"
+      @click="setShowSpot(spot)"
       :key="index"
       v-for="(spot, index) in spots"
       :options="{ position: { lat: spot.latitude, lng: spot.longitude } }"
@@ -65,24 +50,7 @@ const updateShowSpot = (spot) => {
     >
       <i class="bi bi-gear text-xl"></i>
     </div>
-    <div
-      v-if="showSpot.id"
-      class="bg-white shadow absolute bottom-3 inset-x-0 mx-auto w-11/12 sm:w-1/2 max-w-md"
-    >
-      <div class="grid grid-cols-5 cursor-pointer">
-        <div class="col-span-2">
-          <img class="h-20 w-full object-cover" :src="showSpot.image_url" :alt="showSpot.title" />
-        </div>
-        <div class="col-span-3 p-2">
-          <div class="h-2/3 leading-5">
-            <i class="bi bi-geo-alt"></i>
-            {{ showSpot.title }}
-          </div>
-          <div class="h-1/3 text-right">
-            - sursurk.r3m
-          </div>
-        </div>
-      </div>
-    </div>
+    <Information v-if="showSpot.id" @click="showModal" />
+    <Modal />
   </GoogleMap>
 </template>
