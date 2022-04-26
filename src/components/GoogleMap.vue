@@ -38,15 +38,15 @@ const showModal = () => storeService.commit.setIsShowModal(true)
       :options="{ position: { lat: spot.latitude, lng: spot.longitude } }"
     />
     <button
-      class="shadow text-inherit btn btn-secondary btn-sm w-2/3 max-w-xs absolute top-3 inset-x-0 mx-auto"
+      class="text-inherit btn btn-secondary btn-sm top-3 absolute inset-x-0 w-2/3 max-w-xs mx-auto shadow"
     >
       中心を検索
     </button>
     <i
-      class="bi bi-record-circle absolute inset-0 m-auto leading-10 w-10 h-10 text-center text-xl"
+      class="bi bi-record-circle absolute inset-0 w-10 h-10 m-auto text-xl leading-10 text-center"
     ></i>
     <div
-      class="shadow text-inherit btn btn-secondary btn-sm btn-circle absolute top-3 left-3 rounded-full text-center"
+      class="text-inherit btn btn-secondary btn-sm btn-circle top-3 left-3 absolute text-center rounded-full shadow"
     >
       <i class="bi bi-gear text-xl"></i>
     </div>

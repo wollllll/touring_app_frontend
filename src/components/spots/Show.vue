@@ -7,12 +7,12 @@ const showSpot = ref(spotService.getters.showSpot())
 
 <template>
   <div
-    class="bg-white shadow absolute bottom-3 inset-x-0 mx-auto w-11/12 sm:w-1/2 max-w-md"
+    class="bottom-3 sm:w-1/2 absolute inset-x-0 w-11/12 max-w-md mx-auto bg-white shadow"
   >
     <div class="grid grid-cols-5 cursor-pointer">
       <div class="col-span-2">
         <img
-          class="h-20 w-full object-cover"
+          class="object-cover w-full h-20"
           :src="showSpot.image_url"
           :alt="showSpot.title"
         />
