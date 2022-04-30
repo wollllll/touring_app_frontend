@@ -8,7 +8,7 @@ const show = ref(spotService.getters.showSpot())
 
 <template>
   <Carousel />
-  <p>2022-4-30 10:00</p>
+  <p class="font-bold">2022-4-30 10:00</p>
   <p>{{ show.content }}</p>
   <div class="text-right">
     <label class="swap">
