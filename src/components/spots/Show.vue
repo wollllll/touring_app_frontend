@@ -2,7 +2,7 @@
 import { spotService } from '@/services/spotService'
 import { ref } from 'vue'
 
-const showSpot = ref(spotService.getters.showSpot())
+const show = ref(spotService.getters.showSpot())
 </script>
 
 <template>
@@ -13,16 +13,16 @@ const showSpot = ref(spotService.getters.showSpot())
       <div class="col-span-2">
         <img
           class="object-cover w-full h-20"
-          :src="showSpot.image_url"
-          :alt="showSpot.title"
+          :src="show.image_url"
+          :alt="show.title"
         />
       </div>
       <div class="col-span-3 p-2">
         <div class="h-2/3 leading-5">
-          <i class="bi bi-geo-alt"></i>
-          {{ showSpot.title }}
+          <i class="bi bi-geo-alt" />
+          {{ show.title }}
         </div>
-        <div class="h-1/3 text-right">- sursurk.r3m</div>
+        <div class="h-1/3 text-right">- {{ show.user_name }}</div>
       </div>
     </div>
   </div>

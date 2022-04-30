@@ -13,8 +13,8 @@ module.exports = {
     themes: [
       {
         'mytheme': {
-          'primary': '#570df8',
-          'primary-focus': '#4506cb',
+          'primary': 'rgb(147 197 253)',
+          'primary-focus': 'rgb(147 197 253)',
           'primary-content': '#ffffff',
           'secondary': '#ffffff',
           'secondary-focus': '#ffffff',

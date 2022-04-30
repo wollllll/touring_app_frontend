@@ -9,10 +9,10 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
     </div>
     <div class="flex items-center justify-end p-3">
       <router-link :to="{ name: 'top' }">
-        <i class="bi bi-plus-square md:text-2xl sm:text-xl"></i>
+        <i class="bi bi-plus-square md:text-2xl sm:text-xl" />
       </router-link>
       <router-link :to="{ name: 'top' }" class="pl-5">
-        <i class="bi bi-list md:text-3xl sm:text-2xl"></i>
+        <i class="bi bi-list md:text-3xl sm:text-2xl" />
       </router-link>
     </div>
   </header>

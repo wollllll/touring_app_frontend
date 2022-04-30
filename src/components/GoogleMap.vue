@@ -1,5 +1,4 @@
 <script setup>
-import Modal from '@/components/Modal'
 import ShowSpot from '@/components/spots/Show'
 import { spots } from '@/fakers/spot'
 import { spotService } from '@/services/spotService'
@@ -51,6 +50,5 @@ const showModal = () => storeService.commit.setIsShowModal(true)
       <i class="bi bi-gear text-xl"></i>
     </div>
     <ShowSpot v-if="showSpot.id" @click="showModal" />
-    <Modal />
   </GoogleMap>
 </template>
