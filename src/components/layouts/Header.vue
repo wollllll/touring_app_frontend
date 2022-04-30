@@ -4,7 +4,7 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
 
 <template>
   <header class="grid grid-cols-2 bg-blue-300">
-    <div class="flex items-center justify-start p-3">
+    <div class="flex items-center justify-start p-3 font-bold">
       <router-link :to="{ name: 'top' }">{{ APP_NAME }}</router-link>
     </div>
     <div class="flex items-center justify-end p-3">
