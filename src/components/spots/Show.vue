@@ -22,7 +22,7 @@ const show = ref(spotService.getters.showSpot())
           <i class="bi bi-geo-alt" />
           {{ show.title }}
         </div>
-        <div class="h-1/3 text-right text-sm">- {{ show.user_name }}</div>
+        <div class="h-1/3 text-sm text-right">- {{ show.user_name }}</div>
       </div>
     </div>
   </div>
