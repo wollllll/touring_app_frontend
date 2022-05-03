@@ -4,6 +4,7 @@ import Header from '@/components/layouts/Header'
 
 <template>
   <div class="flex flex-col h-screen overflow-hidden">
+    // todo: ドロワーをjsで制御したい
     <div class="drawer">
       <input id="my-drawer" type="checkbox" class="drawer-toggle">
       <div class="drawer-content">
