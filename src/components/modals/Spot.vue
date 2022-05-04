@@ -21,28 +21,26 @@ const isShowModal = storeService.getters.isShowSpotModal()
       />
     </template>
     <template #content>
-      <div class="pt-3">
-        <Carousel />
-        <p class="font-bold">2022-4-30 10:00</p>
-        <p>{{ show.content }}</p>
-        <div class="text-right">
-          <label class="swap">
-            <input type="checkbox" />
+      <Carousel />
+      <p class="font-bold">2022-4-30 10:00</p>
+      <p>{{ show.content }}</p>
+      <div class="text-right">
+        <label class="swap">
+          <input type="checkbox" />
 
-            <i class="bi bi-star swap-off sm:text-xl text-2xl fill-current" />
-            <i
-              class="bi bi-star-fill swap-on sm:text-xl text-2xl text-yellow-400 fill-current"
-            />
-          </label>
-        </div>
-        <div class="flex">
-          <div class="avatar">
-            <div class="w-10 rounded-full">
-              <img src="https://api.lorem.space/image/face?hash=92310" />
-            </div>
+          <i class="bi bi-star swap-off sm:text-xl text-2xl fill-current" />
+          <i
+            class="bi bi-star-fill swap-on sm:text-xl text-2xl text-yellow-400 fill-current"
+          />
+        </label>
+      </div>
+      <div class="flex">
+        <div class="avatar">
+          <div class="w-10 rounded-full">
+            <img src="https://api.lorem.space/image/face?hash=92310" />
           </div>
-          <p class="my-auto ml-3">{{ show.user_name }}</p>
         </div>
+        <p class="my-auto ml-3">{{ show.user_name }}</p>
       </div>
     </template>
   </Base>

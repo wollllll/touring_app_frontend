@@ -15,7 +15,9 @@ console.log(storeService)
           <slot name="close" />
         </div>
       </div>
-      <slot name="content" />
+      <div class="pt-3">
+        <slot name="content" />
+      </div>
     </div>
   </div>
 </template>
