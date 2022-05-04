@@ -1,14 +1,19 @@
 export const modal = {
   namespaced: true,
   state: {
-    isShowModal: false,
+    isShowSpotModal: false,
+    isShowSearchModal: false,
   },
   getters: {
-    isShowModal: (state) => state.isShowModal,
+    isShowSpotModal: (state) => state.isShowSpotModal,
+    isShowSearchModal: (state) => state.isShowSearchModal,
   },
   mutations: {
-    setIsShowModal(state, bool) {
-      state.isShowModal = bool
+    setIsShowSpotModal(state, bool) {
+      state.isShowSpotModal = bool
+    },
+    setIsShowSearchModal(state, bool) {
+      state.isShowSearchModal = bool
     },
   },
 }

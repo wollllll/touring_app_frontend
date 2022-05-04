@@ -3,23 +3,19 @@ import { computed } from 'vue'
 
 export const storeService = {
   getters: {
-    /**
-     * モーダル表示判定を取得
-     *
-     * @returns {any}
-     */
-    isShowModal() {
-      return computed(() => store.getters['modal/isShowModal'])
+    isShowSpotModal() {
+      return computed(() => store.getters['modal/isShowSpotModal'])
+    },
+    isShowSearchModal() {
+      return computed(() => store.getters['modal/isShowSearchModal'])
     },
   },
   commit: {
-    /**
-     * モーダル表示判定を保存
-     *
-     * @param bool
-     */
-    setIsShowModal(bool) {
-      store.commit('modal/setIsShowModal', bool)
+    setIsShowSpotModal(bool) {
+      store.commit('modal/setIsShowSpotModal', bool)
+    },
+    setIsShowSearchModal(bool) {
+      store.commit('modal/setIsShowSearchModal', bool)
     },
   },
 }

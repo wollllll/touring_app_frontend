@@ -15,7 +15,6 @@ const setShowSpot = (spot) => {
   center.value = { lat: spot.latitude, lng: spot.longitude }
   spotService.commit.setShowSpot(spot)
 }
-const showModal = () => storeService.commit.setIsShowModal(true)
 </script>
 
 <template>
@@ -49,6 +48,9 @@ const showModal = () => storeService.commit.setIsShowModal(true)
     >
       <i class="bi bi-gear text-xl"></i>
     </div>
-    <ShowSpot v-if="showSpot.id" @click="showModal" />
+    <ShowSpot
+      v-if="showSpot.id"
+      @click="storeService.commit.setIsShowSpotModal(true)"
+    />
   </GoogleMap>
 </template>
