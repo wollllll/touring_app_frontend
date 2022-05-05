@@ -1,6 +1,7 @@
 <script setup>
 import Carousel from '@/components/Carousel'
 import Base from '@/components/modals/Base'
+import Profile from '@/components/users/Profile'
 import { spotService } from '@/services/spotService'
 import { storeService } from '@/services/storeService'
 import { ref } from 'vue'
@@ -34,14 +35,7 @@ const isShowModal = storeService.getters.isShowSpotModal()
           />
         </label>
       </div>
-      <div class="flex">
-        <div class="avatar">
-          <div class="w-10 rounded-full">
-            <img src="https://api.lorem.space/image/face?hash=92310" />
-          </div>
-        </div>
-        <p class="my-auto ml-3">{{ show.user_name }}</p>
-      </div>
+      <Profile />
     </template>
   </Base>
 </template>
