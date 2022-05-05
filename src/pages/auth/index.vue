@@ -1,7 +1,7 @@
 <script setup>
 import Information from '@/components/Information'
+import Login from '@/components/form/Login'
 import Base from '@/components/layouts/Base'
-import Login from "@/components/form/Login";
 </script>
 
 <template>
@@ -15,14 +15,14 @@ import Login from "@/components/form/Login";
           </p>
         </Information>
         <button class="btn btn-primary w-full mt-10">
-          <i class="bi bi-lock text-xl"/>&nbsp;アカウントを新規作成
+          <i class="bi bi-lock text-xl" />&nbsp;アカウントを新規作成
         </button>
       </section>
-      <section class="mt-5">
+      <section class="mt-10">
         <Information>
           <p>アカウントをお持ちの方はこちら</p>
         </Information>
-        <Login />
+        <Login class="lg:mt-10 mt-5" />
       </section>
     </div>
   </Base>

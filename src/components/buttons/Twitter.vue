@@ -3,14 +3,14 @@ console.log('Twitter')
 </script>
 
 <template>
-  <button class="btn btn-twitter grid grid-cols-4 normal-case shadow w-full">
-    <img src="img/twitter.png" class="w-10 h-10" alt="twitter logo"/>
+  <button class="btn grid w-full grid-cols-4 normal-case shadow">
+    <img src="img/twitter.png" class="w-10 h-10" alt="twitter logo" />
     <span class="col-span-2">ログイン with Twitter</span>
   </button>
 </template>
 
-<style lang="scss">
-.btn-twitter {
+<style lang="scss" scoped>
+.btn {
   background: #1d9bf0;
   border: #1d9bf0;
 
