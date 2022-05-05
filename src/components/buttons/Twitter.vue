@@ -3,20 +3,23 @@ console.log('Twitter')
 </script>
 
 <template>
-  <button class="btn grid w-full grid-cols-4 normal-case shadow">
+  <button
+    class="btn hover:opacity-75 grid w-full grid-cols-4 normal-case shadow"
+  >
     <img src="img/twitter.png" class="w-10 h-10" alt="twitter logo" />
     <span class="col-span-2">ログイン with Twitter</span>
   </button>
 </template>
 
 <style lang="scss" scoped>
+$twitter-color: #1d9bf0;
+
 .btn {
-  background: #1d9bf0;
-  border: #1d9bf0;
+  background: $twitter-color;
+  border: $twitter-color;
 
   &:hover {
-    background: #1d9bf0;
-    opacity: 0.8;
+    background: $twitter-color;
   }
 }
 </style>

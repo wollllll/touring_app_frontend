@@ -1,6 +1,7 @@
 <script setup>
 import Carousel from '@/components/Carousel'
 import Base from '@/components/modals/Base'
+import CloseButton from '@/components/modals/CloseButton'
 import Profile from '@/components/users/Profile'
 import { spotService } from '@/services/spotService'
 import { storeService } from '@/services/storeService'
@@ -16,10 +17,7 @@ const isShowModal = storeService.getters.isShowSpotModal()
       <i class="bi bi-geo-alt" />&nbsp;{{ show.title }}
     </template>
     <template #close>
-      <i
-        @click="storeService.commit.setIsShowSpotModal(false)"
-        class="btn btn-sm btn-primary btn-circle bi bi-x text-xl"
-      />
+      <CloseButton @click="storeService.commit.setIsShowSpotModal(false)" />
     </template>
     <template #content>
       <Carousel />

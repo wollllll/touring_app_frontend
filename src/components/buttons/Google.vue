@@ -3,21 +3,23 @@ console.log('Google')
 </script>
 
 <template>
-  <button class="btn grid w-full grid-cols-4 normal-case shadow">
+  <button
+    class="btn primary-text-color hover:opacity-75 grid w-full grid-cols-4 normal-case shadow"
+  >
     <img src="img/google.png" class="w-7 h-7 ml-1" alt="google logo" />
     <span class="col-span-2 text-current">ログイン with Google</span>
   </button>
 </template>
 
 <style lang="scss" scoped>
+$google-color: #ffffff;
+
 .btn {
-  border: #ffffff;
-  background: #ffffff;
-  color: #1f2937;
+  background: $google-color;
+  border: $google-color;
 
   &:hover {
-    background: #ffffff;
-    opacity: 0.8;
+    background: $google-color;
   }
 }
 </style>
