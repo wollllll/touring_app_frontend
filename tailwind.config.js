@@ -26,7 +26,7 @@ module.exports = {
           'neutral-focus': '#2a2e37',
           'neutral-content': '#ffffff',
           'base-100': '#ffffff',
-          'base-200': '#f9fafb',
+          'base-200': '#91C3FD',
           'base-300': '#d1d5db',
           'base-content': '#1f2937',
           'info': '#91C3FD',

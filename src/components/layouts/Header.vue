@@ -6,7 +6,7 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
 </script>
 
 <template>
-  <header class="grid grid-cols-2 px-2 bg-blue-300">
+  <header class="bg-base-200 grid grid-cols-2 px-2">
     <div class="flex items-center justify-start">
       <router-link :to="{ name: 'top' }" class="font-bold">
         {{ APP_NAME }}

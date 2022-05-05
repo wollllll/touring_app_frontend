@@ -1,6 +1,7 @@
 <script setup>
 import GoogleLogin from '@/components/buttons/Google'
 import LineLogin from '@/components/buttons/Line'
+import PrimaryButton from '@/components/buttons/Primary'
 import TwitterLogin from '@/components/buttons/Twitter'
 import Input from '@/components/form/Input'
 </script>
@@ -20,9 +21,9 @@ import Input from '@/components/form/Input'
       <div class="w-full pt-5">
         <Input type="password" placeholder="パスワード" />
       </div>
-      <button class="btn btn-primary w-full mt-5">
-        ログイン&nbsp;<i class="bi bi-person-plus text-xl" />
-      </button>
+      <PrimaryButton class="mt-5">
+        <i class="bi bi-lock text-xl" />&nbsp;ログイン
+      </PrimaryButton>
     </div>
   </div>
 </template>

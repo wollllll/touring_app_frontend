@@ -1,4 +1,5 @@
 <script setup>
+import SecondaryButton from '@/components/buttons/Secondary'
 import ShowSpot from '@/components/spots/Show'
 import { spots } from '@/fakers/spot'
 import { spotService } from '@/services/spotService'
@@ -35,19 +36,14 @@ const setShowSpot = (spot) => {
       v-for="(spot, index) in spots"
       :options="{ position: { lat: spot.latitude, lng: spot.longitude } }"
     />
-    <button
-      class="text-inherit btn btn-secondary btn-sm top-3 absolute inset-x-0 w-2/3 max-w-xs mx-auto shadow"
+    <SecondaryButton
+      class="btn-sm top-3 absolute inset-x-0 w-2/3 max-w-xs mx-auto"
     >
-      中心を検索
-    </button>
+      <i class="bi bi-search text-lg" />&nbsp;中心を検索
+    </SecondaryButton>
     <i
       class="bi bi-record-circle absolute inset-0 w-10 h-10 m-auto text-xl leading-10 text-center"
     ></i>
-    <div
-      class="text-inherit btn btn-secondary btn-sm btn-circle top-3 left-3 absolute text-center rounded-full shadow"
-    >
-      <i class="bi bi-gear text-xl"></i>
-    </div>
     <ShowSpot
       v-if="showSpot.id"
       @click="storeService.commit.setIsShowSpotModal(true)"
