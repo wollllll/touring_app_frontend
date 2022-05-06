@@ -1,7 +1,3 @@
-<script>
-console.log('secondary')
-</script>
-
 <template>
   <button
     type="button"

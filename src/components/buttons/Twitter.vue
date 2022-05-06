@@ -1,6 +1,4 @@
-<script setup>
-console.log('Twitter')
-</script>
+
 
 <template>
   <button

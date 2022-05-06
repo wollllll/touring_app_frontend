@@ -1,7 +1,3 @@
-<script setup>
-console.log('Google')
-</script>
-
 <template>
   <button
     class="btn primary-text-color hover:opacity-75 grid w-full grid-cols-4 normal-case shadow"

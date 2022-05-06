@@ -1,9 +1,3 @@
-<script setup>
-import { storeService } from '@/services/storeService'
-
-console.log(storeService)
-</script>
-
 <template>
   <div class="modal">
     <div class="modal-box relative">
