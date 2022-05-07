@@ -18,20 +18,20 @@ const isShowModal = storeService.getters.isShowSearchModal()
       <Input type="text" placeholder="検索"/>
       <div class="grid grid-cols-2 pt-3">
         <div class="col-span-1">
-          <input
-            type="checkbox"
-            checked="checked"
-            class="checkbox checkbox-primary"
-          />
-          &nbsp;お気に入り
+          <div class="form-control">
+            <label class="label cursor-pointer">
+              <span class="label-text">お気に入り</span>
+              <input type="checkbox" class="checkbox checkbox-primary" />
+            </label>
+          </div>
         </div>
         <div class="col-span-1">
-          <input
-            type="checkbox"
-            checked="checked"
-            class="checkbox checkbox-primary"
-          />
-          &nbsp;フォローアカウント
+          <div class="form-control">
+            <label class="label cursor-pointer">
+              <span class="label-text">フォローアカウント</span>
+              <input type="checkbox" class="checkbox checkbox-primary" />
+            </label>
+          </div>
         </div>
       </div>
       <div class="mt-5 text-right">
