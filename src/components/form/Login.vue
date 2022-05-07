@@ -20,14 +20,12 @@ import Input from '@/components/form/Input'
         label="メールアドレス"
         id="email"
         placeholder="メールアドレス"
-        :required="true"
       />
       <Input
         type="login_password"
         label="パスワード"
         id="password"
         placeholder="パスワード"
-        :required="true"
         class="mt-3"
       />
       <PrimaryButton class="mt-5">

@@ -13,7 +13,9 @@ const props = defineProps({
 
 <template>
   <div class="w-full">
-    <Label v-if="props.label" :for="props.id" :required="props.required">{{ props.label }}</Label>
+    <Label v-if="props.label" :for="props.id" :required="props.required">
+      {{ props.label }}
+    </Label>
     <input
       :type="props.type"
       :placeholder="props.placeholder"

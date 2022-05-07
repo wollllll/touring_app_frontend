@@ -23,14 +23,15 @@ const isShowModal = storeService.getters.isCreateSpotModal()
         type="text"
         label="スポット名"
         id="create_name"
-        placeholder="スポット名"
+        placeholder="例）静岡の隠れスポット"
         :required="true"
         class="mt-3"
       />
       <TextArea
         label="投稿内容"
         id="create_content"
-        placeholder="景色が綺麗でおすすめです！"
+        placeholder="例）景色が綺麗でおすすめです！"
+        :required="true"
         :rows="5"
         class="mt-3"
       />

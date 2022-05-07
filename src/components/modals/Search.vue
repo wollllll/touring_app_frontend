@@ -1,9 +1,9 @@
 <script setup>
 import PrimaryButton from '@/components/buttons/PrimaryButton'
+import Input from '@/components/form/Input'
 import Base from '@/components/modals/layouts/Base'
 import CloseButton from '@/components/modals/layouts/CloseButton'
 import { storeService } from '@/services/storeService'
-import Input from "@/components/form/Input";
 
 const isShowModal = storeService.getters.isShowSearchModal()
 </script>
@@ -15,7 +15,7 @@ const isShowModal = storeService.getters.isShowSearchModal()
       <CloseButton @click="storeService.commit.setIsShowSearchModal(false)" />
     </template>
     <template #content>
-      <Input type="text" placeholder="検索"/>
+      <Input type="text" placeholder="検索" />
       <div class="grid grid-cols-2 pt-3">
         <div class="col-span-1">
           <div class="form-control">
