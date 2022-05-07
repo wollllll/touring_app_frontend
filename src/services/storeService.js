@@ -9,6 +9,9 @@ export const storeService = {
     isShowSearchModal() {
       return computed(() => store.getters['modal/isShowSearchModal'])
     },
+    isAuthRegisterModal() {
+      return computed(() => store.getters['modal/isAuthRegisterModal'])
+    },
   },
   commit: {
     setIsShowSpotModal(bool) {
@@ -16,6 +19,9 @@ export const storeService = {
     },
     setIsShowSearchModal(bool) {
       store.commit('modal/setIsShowSearchModal', bool)
+    },
+    setIsAuthRegisterModal(bool) {
+      store.commit('modal/setIsAuthRegisterModal', bool)
     },
   },
 }

@@ -1,5 +1,5 @@
 <script setup>
-import Primary from '@/components/buttons/Primary'
+import Primary from '@/components/buttons/PrimaryButton'
 import Base from '@/components/modals/Base'
 import CloseButton from '@/components/modals/CloseButton'
 import { storeService } from '@/services/storeService'

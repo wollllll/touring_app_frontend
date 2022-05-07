@@ -1,6 +1,7 @@
 <script setup>
 import DrawerMenu from '@/components/layouts/DrawerMenu'
 import Header from '@/components/layouts/Header'
+import AuthRegisterModal from '@/components/modals/AuthRegister'
 </script>
 
 <template>
@@ -19,5 +20,6 @@ import Header from '@/components/layouts/Header'
         <DrawerMenu />
       </div>
     </div>
+    <AuthRegisterModal />
   </div>
 </template>

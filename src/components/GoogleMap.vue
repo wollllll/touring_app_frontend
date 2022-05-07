@@ -1,5 +1,5 @@
 <script setup>
-import SecondaryButton from '@/components/buttons/Secondary'
+import SecondaryButton from '@/components/buttons/SecondaryButton'
 import ShowSpot from '@/components/spots/Show'
 import { spots } from '@/fakers/spot'
 import { spotService } from '@/services/spotService'

@@ -1,4 +1,6 @@
 import auth from '@/pages/auth'
+import complete from '@/pages/auth/complete'
+import register from '@/pages/auth/register'
 import top from '@/pages/top'
 import userEdit from '@/pages/users/edit'
 import { createRouter, createWebHistory } from 'vue-router'
@@ -13,8 +15,18 @@ export const router = createRouter({
     },
     {
       path: '/auth',
-      name: 'auth',
+      name: 'auth_index',
       component: auth,
+    },
+    {
+      path: '/auth/register',
+      name: 'auth_register',
+      component: register,
+    },
+    {
+      path: '/auth/complete',
+      name: 'auth_complete',
+      component: complete,
     },
     {
       path: '/users/:id/edit',

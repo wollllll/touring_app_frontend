@@ -20,7 +20,7 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
         <i class="bi bi-search text-2xl" />
       </router-link>
       <div class="pl-5">
-        <router-link :to="{ name: 'auth' }">
+        <router-link :to="{ name: 'auth_index' }">
           <i class="bi bi-plus-square text-2xl" />
         </router-link>
       </div>

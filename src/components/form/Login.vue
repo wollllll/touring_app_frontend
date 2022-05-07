@@ -1,8 +1,8 @@
 <script setup>
-import GoogleLogin from '@/components/buttons/Google'
-import LineLogin from '@/components/buttons/Line'
-import PrimaryButton from '@/components/buttons/Primary'
-import TwitterLogin from '@/components/buttons/Twitter'
+import GoogleLogin from '@/components/buttons/GoogleLogin'
+import LineLogin from '@/components/buttons/LineLogin'
+import PrimaryButton from '@/components/buttons/PrimaryButton'
+import TwitterLogin from '@/components/buttons/TwitterLogin'
 import Input from '@/components/form/Input'
 </script>
 

@@ -1,5 +1,3 @@
-
-
 <template>
   <button
     class="btn hover:opacity-75 grid w-full grid-cols-4 normal-case shadow"
