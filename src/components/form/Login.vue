@@ -16,14 +16,14 @@ import Input from '@/components/form/Input'
     <div class="divider lg:divider-horizontal" />
     <div class="place-items-center lg:py-5 grid flex-grow py-0">
       <Input
-        type="email"
+        type="login_email"
         label="メールアドレス"
         id="email"
         placeholder="メールアドレス"
         :required="true"
       />
       <Input
-        type="password"
+        type="login_password"
         label="パスワード"
         id="password"
         placeholder="パスワード"
