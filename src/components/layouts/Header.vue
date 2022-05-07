@@ -1,5 +1,4 @@
 <script setup>
-import SearchModal from '@/components/modals/Search'
 import { storeService } from '@/services/storeService'
 
 const APP_NAME = process.env.VUE_APP_APP_NAME
@@ -34,6 +33,5 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
         </label>
       </div>
     </div>
-    <SearchModal />
   </header>
 </template>

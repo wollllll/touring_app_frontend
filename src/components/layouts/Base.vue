@@ -2,6 +2,8 @@
 import DrawerMenu from '@/components/layouts/DrawerMenu'
 import Header from '@/components/layouts/Header'
 import AuthRegisterModal from '@/components/modals/AuthRegister'
+import SearchModal from '@/components/modals/Search'
+import SpotModal from '@/components/modals/Spot'
 </script>
 
 <template>
@@ -21,5 +23,7 @@ import AuthRegisterModal from '@/components/modals/AuthRegister'
       </div>
     </div>
     <AuthRegisterModal />
+    <SearchModal />
+    <SpotModal />
   </div>
 </template>
