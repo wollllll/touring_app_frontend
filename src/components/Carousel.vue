@@ -3,7 +3,7 @@ import { spotService } from '@/services/spotService'
 import { ref } from 'vue'
 
 const show = ref(spotService.getters.showSpot())
-console.log(show)
+console.log('carousel')
 </script>
 
 <template>

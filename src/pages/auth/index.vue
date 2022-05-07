@@ -20,7 +20,7 @@ import { storeService } from '@/services/storeService'
           class="mt-5"
           @click="storeService.commit.setIsAuthRegisterModal(true)"
         >
-          <i class="bi bi-person-plus text-xl" />&nbsp;アカウントを新規作成
+          <i class="bi bi-person-plus text-xl" />&nbsp;アカウントを新規登録
         </PrimaryButton>
       </section>
       <section class="mt-10">

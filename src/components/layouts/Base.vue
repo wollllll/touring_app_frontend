@@ -3,7 +3,8 @@ import DrawerMenu from '@/components/layouts/DrawerMenu'
 import Header from '@/components/layouts/Header'
 import AuthRegisterModal from '@/components/modals/AuthRegister'
 import SearchModal from '@/components/modals/Search'
-import SpotModal from '@/components/modals/Spot'
+import CreateSpotModal from '@/components/modals/spots/Create'
+import ShowSpotModal from '@/components/modals/spots/Show'
 </script>
 
 <template>
@@ -24,6 +25,7 @@ import SpotModal from '@/components/modals/Spot'
     </div>
     <AuthRegisterModal />
     <SearchModal />
-    <SpotModal />
+    <ShowSpotModal />
+    <CreateSpotModal />
   </div>
 </template>

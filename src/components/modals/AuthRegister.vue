@@ -2,8 +2,8 @@
 import Information from '@/components/alerts/Information'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Input from '@/components/form/Input'
-import Base from '@/components/modals/Base'
-import CloseButton from '@/components/modals/CloseButton'
+import Base from '@/components/modals/layouts/Base'
+import CloseButton from '@/components/modals/layouts/CloseButton'
 import { storeService } from '@/services/storeService'
 
 const isShowModal = storeService.getters.isAuthRegisterModal()
@@ -18,15 +18,29 @@ const isShowModal = storeService.getters.isAuthRegisterModal()
       <CloseButton @click="storeService.commit.setIsAuthRegisterModal(false)" />
     </template>
     <template #content>
-      <div class="w-full">
-        <Input type="text" placeholder="名前" />
-      </div>
-      <div class="w-full mt-5">
-        <Input type="email" placeholder="メールアドレス" />
-      </div>
-      <div class="w-full mt-5">
-        <Input type="password" placeholder="パスワード" />
-      </div>
+      <Input
+        type="text"
+        label="ユーザー名"
+        id="register_name"
+        placeholder="ユーザー名"
+        :required="true"
+      />
+      <Input
+        type="email"
+        label="メールアドレス"
+        id="register_email"
+        placeholder="メールアドレス"
+        :required="true"
+        class="mt-3"
+      />
+      <Input
+        type="password"
+        label="パスワード"
+        id="register_password"
+        placeholder="パスワード"
+        :required="true"
+        class="mt-3"
+      />
       <PrimaryButton class="mt-5">
         <router-link :to="{ name: 'auth_register' }">
           <i class="bi bi-person-plus text-xl" />&nbsp;登録

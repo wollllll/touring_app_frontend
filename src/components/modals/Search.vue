@@ -1,7 +1,7 @@
 <script setup>
-import Primary from '@/components/buttons/PrimaryButton'
-import Base from '@/components/modals/Base'
-import CloseButton from '@/components/modals/CloseButton'
+import PrimaryButton from '@/components/buttons/PrimaryButton'
+import Base from '@/components/modals/layouts/Base'
+import CloseButton from '@/components/modals/layouts/CloseButton'
 import { storeService } from '@/services/storeService'
 
 const isShowModal = storeService.getters.isShowSearchModal()
@@ -23,24 +23,26 @@ const isShowModal = storeService.getters.isShowSearchModal()
       </div>
       <div class="grid grid-cols-2 pt-3">
         <div class="col-span-1">
-          お気に入り&nbsp;<input
+          <input
             type="checkbox"
             checked="checked"
             class="checkbox checkbox-primary"
           />
+          &nbsp;お気に入り
         </div>
         <div class="col-span-1">
-          フォローアカウント&nbsp;<input
+          <input
             type="checkbox"
             checked="checked"
             class="checkbox checkbox-primary"
           />
+          &nbsp;フォローアカウント
         </div>
       </div>
-      <div class="pt-3 text-right">
-        <Primary class="btn-md w-auto">
+      <div class="mt-5 text-right">
+        <PrimaryButton class="btn-md w-auto">
           <i class="bi bi-search" />&nbsp;検索
-        </Primary>
+        </PrimaryButton>
       </div>
     </template>
   </Base>

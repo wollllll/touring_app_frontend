@@ -1,7 +1,7 @@
 <script setup>
 import Carousel from '@/components/Carousel'
-import Base from '@/components/modals/Base'
-import CloseButton from '@/components/modals/CloseButton'
+import Base from '@/components/modals/layouts/Base'
+import CloseButton from '@/components/modals/layouts/CloseButton'
 import Profile from '@/components/users/Profile'
 import { spotService } from '@/services/spotService'
 import { storeService } from '@/services/storeService'

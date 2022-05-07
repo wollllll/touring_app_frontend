@@ -10,17 +10,26 @@ import Input from '@/components/form/Input'
   <div class="lg:flex-row flex flex-col">
     <div class="place-items-center lg:py-5 grid flex-grow pt-5">
       <TwitterLogin />
-      <LineLogin class="mt-5" />
-      <GoogleLogin class="mt-5" />
+      <LineLogin class="lg:mt-0 mt-5" />
+      <GoogleLogin class="lg:mt-0 mt-5" />
     </div>
     <div class="divider lg:divider-horizontal" />
     <div class="place-items-center lg:py-5 grid flex-grow py-0">
-      <div class="w-full">
-        <Input type="email" placeholder="メールアドレス" />
-      </div>
-      <div class="w-full pt-5">
-        <Input type="password" placeholder="パスワード" />
-      </div>
+      <Input
+        type="email"
+        label="メールアドレス"
+        id="email"
+        placeholder="メールアドレス"
+        :required="true"
+      />
+      <Input
+        type="password"
+        label="パスワード"
+        id="password"
+        placeholder="パスワード"
+        :required="true"
+        class="mt-3"
+      />
       <PrimaryButton class="mt-5">
         <i class="bi bi-lock text-xl" />&nbsp;ログイン
       </PrimaryButton>

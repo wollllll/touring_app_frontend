@@ -3,6 +3,9 @@ import { computed } from 'vue'
 
 export const storeService = {
   getters: {
+    isCreateSpotModal() {
+      return computed(() => store.getters['modal/isCreateSpotModal'])
+    },
     isShowSpotModal() {
       return computed(() => store.getters['modal/isShowSpotModal'])
     },
@@ -14,6 +17,9 @@ export const storeService = {
     },
   },
   commit: {
+    setIsCreateSpotModal(bool) {
+      store.commit('modal/setIsCreateSpotModal', bool)
+    },
     setIsShowSpotModal(bool) {
       store.commit('modal/setIsShowSpotModal', bool)
     },

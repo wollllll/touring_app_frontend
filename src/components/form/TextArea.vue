@@ -2,24 +2,22 @@
 import Label from '@/components/form/Label'
 
 const props = defineProps({
-  type: String,
   label: String,
   id: String,
   placeholder: String,
+  rows: Number,
   required: Boolean,
-  disabled: Boolean,
 })
 </script>
 
 <template>
   <div class="w-full">
     <Label :for="props.id" :required="props.required">{{ props.label }}</Label>
-    <input
-      :type="props.type"
+    <textarea
       :placeholder="props.placeholder"
       :id="props.id"
-      :disabled="props.disabled"
-      class="input input-bordered w-full mt-1"
-    />
+      :rows="props.rows"
+      class="textarea textarea-bordered w-full mt-1"
+    ></textarea>
   </div>
 </template>
