@@ -16,19 +16,21 @@ const isShowModal = storeService.getters.isShowSearchModal()
     </template>
     <template #content>
       <Input type="text" placeholder="検索" />
-      <div class="grid grid-cols-2 pt-3">
-        <div class="col-span-1">
+      <div class="divider" />
+      <p class="font-bold">条件付きで検索</p>
+      <div class="grid lg:grid-cols-5 grid-cols-1">
+        <div class="lg:col-span-2">
           <div class="form-control">
-            <label class="label cursor-pointer">
-              <span class="label-text">お気に入り</span>
+            <label class="p-0 label cursor-pointer">
+              お気に入りスポット
               <input type="checkbox" class="checkbox checkbox-primary" />
             </label>
           </div>
         </div>
-        <div class="col-span-1">
+        <div class="lg:col-start-4 lg:col-span-2 lg:mt-0 mt-3">
           <div class="form-control">
-            <label class="label cursor-pointer">
-              <span class="label-text">フォローアカウント</span>
+            <label class="p-0 label cursor-pointer">
+              フォローアカウント
               <input type="checkbox" class="checkbox checkbox-primary" />
             </label>
           </div>
