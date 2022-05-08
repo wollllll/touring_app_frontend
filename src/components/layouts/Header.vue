@@ -18,7 +18,7 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
         >
           <i class="bi bi-search text-xl" />
         </router-link>
-        <div class="dropdown dropdown-end">
+        <div class="dropdown dropdown-end ml-3">
           <label tabindex="0" class="btn btn-ghost btn-circle avatar">
             <div class="w-10 rounded-full shadow">
               <img src="https://api.lorem.space/image/face?hash=33791" />
@@ -43,10 +43,14 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
                 type="button"
                 @click="storeService.commit.setIsCreateSpotModal(true)"
               >
-                <i class="bi bi-person text-lg" />スポットの投稿
+                <i class="bi bi-geo-alt text-lg" />スポットの投稿
               </button>
             </li>
-            <li><a>ログアウト</a></li>
+            <li>
+              <button type="button">
+                <i class="bi bi-box-arrow-right text-lg" />ログアウト
+              </button>
+            </li>
           </ul>
         </div>
       </div>
