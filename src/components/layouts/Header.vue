@@ -8,7 +8,11 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
   <header class="primary-bg-color">
     <div class="navbar">
       <div class="flex-1">
-        <router-link :to="{ name: 'top' }" class="btn btn-ghost text-lg normal-case">{{ APP_NAME }}</router-link>
+        <router-link
+          :to="{ name: 'top' }"
+          class="btn btn-ghost text-lg normal-case"
+          >{{ APP_NAME }}</router-link
+        >
       </div>
       <div class="flex-none gap-2">
         <router-link

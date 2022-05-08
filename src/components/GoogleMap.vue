@@ -1,5 +1,5 @@
 <script setup>
-import SecondaryButton from '@/components/buttons/SecondaryButton'
+import PrimaryButton from '@/components/buttons/PrimaryButton'
 import ShowSpot from '@/components/spots/Show'
 import { spots } from '@/fakers/spot'
 import { spotService } from '@/services/spotService'
@@ -36,11 +36,11 @@ const setShowSpot = (spot) => {
       v-for="(spot, index) in spots"
       :options="{ position: { lat: spot.latitude, lng: spot.longitude } }"
     />
-    <SecondaryButton
+    <PrimaryButton
       class="btn-sm top-3 absolute inset-x-0 w-2/3 max-w-xs mx-auto"
     >
       <i class="bi bi-search text-lg" />&nbsp;中心を検索
-    </SecondaryButton>
+    </PrimaryButton>
     <i
       class="bi bi-record-circle absolute inset-0 w-10 h-10 m-auto text-xl leading-10 text-center"
     ></i>
