@@ -7,9 +7,9 @@ import ShowSpotModal from '@/components/modals/spots/Show'
 </script>
 
 <template>
-  <div class="flex flex-col h-screen overflow-hidden secondary-bg-color">
+  <div class="flex flex-col h-screen secondary-bg-color">
     <Header class="lg:px-40 shadow"/>
-    <main class="lg:px-40 flex-grow" style="height: 92%">
+    <main class="lg:px-40 flex-grow">
       <slot />
     </main>
     <AuthRegisterModal />
