@@ -34,6 +34,11 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
               </router-link>
             </li>
             <li>
+              <router-link :to="{ name: 'auth_index' }">
+                <i class="bi bi-person text-lg" />アカウント登録
+              </router-link>
+            </li>
+            <li>
               <button
                 type="button"
                 @click="storeService.commit.setIsCreateSpotModal(true)"

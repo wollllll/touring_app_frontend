@@ -6,7 +6,7 @@ import Profile from '@/components/users/Profile'
 <template>
   <Base>
     <div class="xl:px-64 p-5">
-      <div class="card shadow">
+      <div class="card shadow bg-white">
         <div class="card-body">
           <Profile />
         </div>

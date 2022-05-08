@@ -1,7 +1,7 @@
 <script setup>
 import PrimaryButton from '@/components/buttons/PrimaryButton'
-import Input from '@/components/form/Input'
-import TextArea from '@/components/form/TextArea'
+import Input from '@/components/forms/Input'
+import TextArea from '@/components/forms/TextArea'
 import Base from '@/components/modals/layouts/Base'
 import CloseButton from '@/components/modals/layouts/CloseButton'
 import { storeService } from '@/services/storeService'

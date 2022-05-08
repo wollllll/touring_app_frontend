@@ -1,7 +1,7 @@
 <script setup>
 import Information from '@/components/alerts/Information'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
-import Login from '@/components/form/Login'
+import Login from '@/components/forms/Login'
 import Base from '@/components/layouts/Base'
 import { storeService } from '@/services/storeService'
 </script>

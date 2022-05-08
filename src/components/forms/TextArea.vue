@@ -1,5 +1,5 @@
 <script setup>
-import Label from '@/components/form/Label'
+import Label from '@/components/forms/Label'
 
 const props = defineProps({
   label: String,
