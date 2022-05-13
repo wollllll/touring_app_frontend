@@ -5,17 +5,31 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="hover:opacity-75 bg-white shadow">
-    <div class="grid grid-cols-5 cursor-pointer">
-      <div class="col-span-2">
-        <img class="object-cover w-full h-20" :src="require(`@/../public/img/${spot.image_url}`)" :alt="spot.title" />
+  <div class="hover:opacity-75 flex cursor-pointer">
+    <figure class="w-2/5">
+      <div class="card">
+        <img
+          class="w-30 h-24"
+          :src="require(`@/../public/img/${spot.image_url}`)"
+          :alt="spot.title"
+        />
       </div>
-      <div class="col-span-3 p-2">
-        <div class="h-2/3 leading-5">
-          <i class="bi bi-geo-alt" />
-          {{ spot.title }}
+    </figure>
+    <div class="w-3/5 pl-4">
+      <h2 class="font-bold">
+        <i class="bi bi-geo-alt" />&nbsp;{{ spot.title }}
+      </h2>
+      <div class="flex mt-2 text-sm">
+        <div>
+          <label tabindex="0" class="avatar">
+            <div class="w-7 rounded-full shadow">
+              <img src="https://api.lorem.space/image/face?hash=33791" />
+            </div>
+          </label>
         </div>
-        <div class="h-1/3 text-sm text-right">- {{ spot.user_name }}</div>
+        <div class="my-auto ml-2">
+          <span>- {{ spot.user_name }}</span>
+        </div>
       </div>
     </div>
   </div>

@@ -3,7 +3,7 @@
     <div class="flex">
       <div class="avatar">
         <div class="w-10 rounded-full">
-          <img src="https://api.lorem.space/image/face?hash=92310" />
+          <img src="https://api.lorem.space/image/face?hash=33791" />
         </div>
       </div>
       <p class="my-auto ml-3">

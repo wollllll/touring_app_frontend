@@ -4,7 +4,7 @@ import ShowSpot from '@/components/spots/Show'
 import { spots } from '@/fakers/spot'
 import { spotService } from '@/services/spotService'
 import { storeService } from '@/services/storeService'
-import {onUnmounted, ref} from 'vue'
+import { onUnmounted, ref } from 'vue'
 import { GoogleMap, Marker } from 'vue3-google-map'
 
 const API_KEY = process.env.VUE_APP_GOOGLE_MAP_API_KEY
@@ -47,11 +47,14 @@ onUnmounted(() => {
     <i
       class="bi bi-record-circle absolute inset-0 w-10 h-10 m-auto text-xl leading-10 text-center"
     ></i>
-    <ShowSpot
+    <div
       v-if="showSpot.id"
-      :spot="showSpot"
-      class="bottom-3 sm:w-1/2 absolute inset-x-0 w-11/12 max-w-md mx-auto"
-      @click="storeService.commit.setIsShowSpotModal(true)"
-    />
+      class="bottom-3 sm:w-1/2 absolute inset-x-0 w-11/12 max-w-md p-3 mx-auto bg-white"
+    >
+      <ShowSpot
+        :spot="showSpot"
+        @click="storeService.commit.setIsShowSpotModal(true)"
+      />
+    </div>
   </GoogleMap>
 </template>
