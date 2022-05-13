@@ -7,7 +7,7 @@ const props = defineProps({
 
 <template>
   <label :for="props.id" class="cursor-pointer">
-    <span v-if="props.required" class="text-red-500">*</span>
     <slot />
+    <span v-if="props.required" class="text-red-500">*</span>
   </label>
 </template>

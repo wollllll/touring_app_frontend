@@ -6,7 +6,12 @@
           <img src="https://api.lorem.space/image/face?hash=92310" />
         </div>
       </div>
-      <p class="my-auto ml-3">加藤タカヒロ</p>
+      <p class="my-auto ml-3">
+        加藤タカヒロ
+        <router-link :to="{ name: 'user_edit', params: {id: 1} }">
+          <i class="bi bi-gear" />
+        </router-link>
+      </p>
     </div>
     <p class="mt-3">
       プロフィールプロフィールプロフィールプロフィールプロフィールプロフィールプロフィールプロフィールプロフィールプロフィール

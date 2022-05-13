@@ -33,7 +33,7 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
             class="menu menu-compact dropdown-content bg-base-100 rounded-box w-52 p-2 mt-3 shadow"
           >
             <li>
-              <router-link :to="{ name: 'user_edit', params: { id: 1 } }">
+              <router-link :to="{ name: 'user_show', params: { id: 1 } }">
                 <i class="bi bi-person text-lg" />アカウント
               </router-link>
             </li>
@@ -43,12 +43,12 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
               </router-link>
             </li>
             <li>
-              <button
-                type="button"
+              <router-link
+                  :to="{ name: 'top' }"
                 @click="storeService.commit.setIsCreateSpotModal(true)"
               >
                 <i class="bi bi-geo-alt text-lg" />スポットの投稿
-              </button>
+              </router-link>
             </li>
             <li>
               <button type="button">
