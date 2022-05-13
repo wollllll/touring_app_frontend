@@ -8,7 +8,7 @@
       </div>
       <p class="my-auto ml-3">
         加藤タカヒロ
-        <router-link :to="{ name: 'user_edit', params: {id: 1} }">
+        <router-link :to="{ name: 'user_edit', params: { id: 1 } }">
           <i class="bi bi-gear" />
         </router-link>
       </p>

@@ -2,8 +2,8 @@ import auth from '@/pages/auth'
 import complete from '@/pages/auth/complete'
 import register from '@/pages/auth/register'
 import top from '@/pages/top'
-import userShow from '@/pages/users/show'
 import userEdit from '@/pages/users/edit'
+import userShow from '@/pages/users/show'
 import { createRouter, createWebHistory } from 'vue-router'
 
 export const router = createRouter({

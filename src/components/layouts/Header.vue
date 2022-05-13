@@ -44,7 +44,7 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
             </li>
             <li>
               <router-link
-                  :to="{ name: 'top' }"
+                :to="{ name: 'top' }"
                 @click="storeService.commit.setIsCreateSpotModal(true)"
               >
                 <i class="bi bi-geo-alt text-lg" />スポットの投稿
