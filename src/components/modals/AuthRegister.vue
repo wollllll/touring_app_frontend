@@ -13,7 +13,7 @@ const isShowModal = storeService.getters.isAuthRegisterModal()
 <template>
   <Base :class="isShowModal ? 'modal-open' : ''">
     <template #title>
-      <IconWithText class="bi-person-plus">アカウント登録</IconWithText>
+      <IconWithText icon-class="bi-person-plus">アカウント登録</IconWithText>
     </template>
     <template #close>
       <CloseButton @click="storeService.commit.setIsAuthRegisterModal(false)" />
@@ -42,7 +42,7 @@ const isShowModal = storeService.getters.isAuthRegisterModal()
       />
       <PrimaryButton>
         <router-link :to="{ name: 'auth_register' }">
-          <IconWithText class="bi-person-plus">登録</IconWithText>
+          <IconWithText icon-class="bi-person-plus">登録</IconWithText>
         </router-link>
       </PrimaryButton>
       <Information class="mt-5">

@@ -44,7 +44,7 @@ onUnmounted(() => {
     <PrimaryButton
       class="btn-sm top-3 absolute inset-x-0 w-2/3 max-w-xs mx-auto mt-0"
     >
-      <IconWithText class="bi-search">中心を検索</IconWithText>
+      <IconWithText icon-class="bi-search">中心を検索</IconWithText>
     </PrimaryButton>
     <i
       class="bi bi-record-circle absolute inset-0 w-10 h-10 m-auto text-xl leading-10 text-center"

@@ -15,7 +15,7 @@ const isShowModal = storeService.getters.isShowSpotModal()
 <template>
   <Base :class="isShowModal ? 'modal-open' : ''">
     <template #title>
-      <IconWithText class="bi-geo-alt">{{ show.title }}</IconWithText>
+      <IconWithText icon-class="bi-geo-alt">{{ show.title }}</IconWithText>
     </template>
     <template #close>
       <CloseButton @click="storeService.commit.setIsShowSpotModal(false)" />
