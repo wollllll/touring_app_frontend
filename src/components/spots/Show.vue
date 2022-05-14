@@ -1,5 +1,6 @@
 <script setup>
 import IconWithText from '@/components/IconWithText'
+import Avatar from '@/components/users/Avatar'
 
 const props = defineProps({
   spot: Object,
@@ -24,14 +25,7 @@ const props = defineProps({
         </IconWithText>
       </h2>
       <div class="flex mt-2 text-sm">
-        <div tabindex="0" class="avatar">
-          <div class="w-7 rounded-full shadow">
-            <img
-              src="https://api.lorem.space/image/face?hash=33791"
-              alt="アバター"
-            />
-          </div>
-        </div>
+        <Avatar size="w-7" />
         <div class="my-auto ml-2">
           <span>- {{ spot.user_name }}</span>
         </div>

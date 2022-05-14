@@ -6,7 +6,9 @@ import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Login from '@/components/forms/Login'
 import Base from '@/components/layouts/Base'
 import Section from '@/components/layouts/Section'
-import { router } from '@/router'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 </script>
 
 <template>

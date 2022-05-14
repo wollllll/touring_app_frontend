@@ -1,5 +1,5 @@
 <template>
-  <div class="first:mt-0 w-full mt-3">
+  <div class="first:mt-0 w-full mt-5">
     <slot />
   </div>
 </template>

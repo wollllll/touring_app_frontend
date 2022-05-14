@@ -1,14 +1,20 @@
+<script setup>
+import Avatar from '@/components/users/Avatar'
+import { storeService } from '@/services/storeService'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+const pushUserShow = () => {
+  storeService.commit.setIsShowSpotModal(false)
+  router.push({ name: 'user_show', params: { id: 1 } })
+}
+</script>
+
 <template>
   <article>
     <div class="flex">
-      <div class="avatar">
-        <div class="w-10 rounded-full">
-          <img
-            src="https://api.lorem.space/image/face?hash=33791"
-            alt="アバター"
-          />
-        </div>
-      </div>
+      <Avatar class="btn btn-ghost btn-circle" @click="pushUserShow" />
       <p class="my-auto ml-3">
         加藤タカヒロ
         <router-link

@@ -1,5 +1,6 @@
 <script setup>
 import IconWithText from '@/components/IconWithText'
+import Avatar from '@/components/users/Avatar'
 import { storeService } from '@/services/storeService'
 
 const APP_NAME = process.env.VUE_APP_APP_NAME
@@ -25,14 +26,7 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
           <i class="bi-search text-xl" />
         </router-link>
         <div class="dropdown dropdown-end ml-3">
-          <div tabindex="0" class="btn btn-ghost btn-circle avatar">
-            <div class="w-10 rounded-full shadow">
-              <img
-                src="https://api.lorem.space/image/face?hash=33791"
-                alt="アバター"
-              />
-            </div>
-          </div>
+          <Avatar size="w-10" class="btn btn-ghost btn-circle" />
           <ul
             tabindex="0"
             class="menu menu-compact dropdown-content bg-base-100 rounded-box w-52 p-2 mt-3 shadow"
@@ -61,7 +55,7 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
             </li>
             <li>
               <button type="button">
-                <IconWithText icon-class="bi-box-arrow-right">
+                <IconWithText icon-class="bi-arrow-bar-right">
                   ログアウト
                 </IconWithText>
               </button>

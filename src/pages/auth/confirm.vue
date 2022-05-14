@@ -9,12 +9,13 @@ import Section from '@/components/layouts/Section'
 <template>
   <Base>
     <div class="xl:px-64 p-5">
-      <ViewTitle>アカウント登録完了</ViewTitle>
+      <ViewTitle>メールアドレス確認</ViewTitle>
       <Step />
       <Section>
         <Information>
-          <p>アカウントの登録が完了しました！</p>
-          <p>お楽しみください。</p>
+          <p>まだアカウントの登録が完了していません。</p>
+          <p>ご登録のメールアドレス宛てに確認メールを送信しました。</p>
+          <p>メールに記載のURLを押して承認をしてください。</p>
         </Information>
       </Section>
     </div>
