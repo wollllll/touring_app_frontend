@@ -22,15 +22,13 @@ const props = defineProps({
         <IconWithText icon-class="bi-geo-alt">{{ spot.title }}</IconWithText>
       </h2>
       <div class="flex mt-2 text-sm">
-        <div>
-          <label tabindex="0" class="avatar">
-            <div class="w-7 rounded-full shadow">
-              <img
-                src="https://api.lorem.space/image/face?hash=33791"
-                alt="アバター"
-              />
-            </div>
-          </label>
+        <div tabindex="0" class="avatar">
+          <div class="w-7 rounded-full shadow">
+            <img
+              src="https://api.lorem.space/image/face?hash=33791"
+              alt="アバター"
+            />
+          </div>
         </div>
         <div class="my-auto ml-2">
           <span>- {{ spot.user_name }}</span>

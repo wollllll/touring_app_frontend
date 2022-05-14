@@ -22,14 +22,17 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
           @click="storeService.commit.setIsShowSearchModal(true)"
           class="hover:opacity-75"
         >
-          <Icon class="bi-search text-xl" />
+          <i class="bi-search text-xl" />
         </router-link>
         <div class="dropdown dropdown-end ml-3">
-          <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+          <div tabindex="0" class="btn btn-ghost btn-circle avatar">
             <div class="w-10 rounded-full shadow">
-              <img src="https://api.lorem.space/image/face?hash=33791" />
+              <img
+                src="https://api.lorem.space/image/face?hash=33791"
+                alt="アバター"
+              />
             </div>
-          </label>
+          </div>
           <ul
             tabindex="0"
             class="menu menu-compact dropdown-content bg-base-100 rounded-box w-52 p-2 mt-3 shadow"
