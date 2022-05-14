@@ -1,4 +1,5 @@
 <script setup>
+import IconWithText from '@/components/IconWithText'
 import ViewTitle from '@/components/ViewTitle'
 import Information from '@/components/alerts/Information'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
@@ -22,7 +23,9 @@ import { storeService } from '@/services/storeService'
         <PrimaryButton
           @click="storeService.commit.setIsAuthRegisterModal(true)"
         >
-          <i class="bi bi-person-plus text-xl" />&nbsp;アカウントを新規登録
+          <IconWithText icon-class="bi-person-plus"
+            >アカウントを新規登録</IconWithText
+          >
         </PrimaryButton>
       </Section>
       <Section>

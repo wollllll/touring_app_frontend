@@ -1,4 +1,5 @@
 <script setup>
+import IconWithText from '@/components/IconWithText'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Input from '@/components/forms/Input'
 import TextArea from '@/components/forms/TextArea'
@@ -12,7 +13,7 @@ const isShowModal = storeService.getters.isCreateSpotModal()
 <template>
   <Base :class="isShowModal ? 'modal-open' : ''">
     <template #title>
-      <i class="bi bi-geo-alt" />&nbsp;スポットの投稿
+      <IconWithText class="bi-geo-alt">スポットの投稿</IconWithText>
     </template>
     <template #close>
       <CloseButton @click="storeService.commit.setIsCreateSpotModal(false)" />
@@ -53,7 +54,7 @@ const isShowModal = storeService.getters.isCreateSpotModal()
       </div>
       <div class="mt-5 text-right">
         <PrimaryButton class="btn-md w-auto">
-          <i class="bi bi-pencil-square"></i>&nbsp;投稿
+          <IconWithText class="bi bi-pencil-square">投稿</IconWithText>
         </PrimaryButton>
       </div>
     </template>

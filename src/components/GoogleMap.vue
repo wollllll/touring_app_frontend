@@ -1,4 +1,5 @@
 <script setup>
+import IconWithText from '@/components/IconWithText'
 import Information from '@/components/alerts/Information'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import ShowSpot from '@/components/spots/Show'
@@ -43,7 +44,7 @@ onUnmounted(() => {
     <PrimaryButton
       class="btn-sm top-3 absolute inset-x-0 w-2/3 max-w-xs mx-auto mt-0"
     >
-      <i class="bi bi-search text-lg" />&nbsp;中心を検索
+      <IconWithText class="bi-search">中心を検索</IconWithText>
     </PrimaryButton>
     <i
       class="bi bi-record-circle absolute inset-0 w-10 h-10 m-auto text-xl leading-10 text-center"

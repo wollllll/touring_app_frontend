@@ -3,13 +3,19 @@
     <div class="flex">
       <div class="avatar">
         <div class="w-10 rounded-full">
-          <img src="https://api.lorem.space/image/face?hash=33791" />
+          <img
+            src="https://api.lorem.space/image/face?hash=33791"
+            alt="アバター"
+          />
         </div>
       </div>
       <p class="my-auto ml-3">
         加藤タカヒロ
-        <router-link :to="{ name: 'user_edit', params: { id: 1 } }">
-          <i class="bi bi-gear" />
+        <router-link
+          :to="{ name: 'user_edit', params: { id: 1 } }"
+          class="hover:opacity-75"
+        >
+          <i class="bi bi-gear text-lg" />
         </router-link>
       </p>
     </div>
@@ -17,8 +23,18 @@
       プロフィールプロフィールプロフィールプロフィールプロフィールプロフィールプロフィールプロフィールプロフィールプロフィール
     </p>
     <p class="mt-3 text-sm text-right">
-      <span class="font-bold">100</span>&nbsp;フォロー
-      <span class="font-bold">50</span>&nbsp;フォロワー
+      <router-link
+        :to="{ name: 'user_follow', params: { id: 1 } }"
+        class="hover:opacity-75"
+      >
+        <span class="font-bold">100</span>&nbsp;フォロー
+      </router-link>
+      <router-link
+        :to="{ name: 'user_follow', params: { id: 1 } }"
+        class="hover:opacity-75 ml-1"
+      >
+        <span class="font-bold">50</span>&nbsp;フォロワー
+      </router-link>
     </p>
   </article>
 </template>

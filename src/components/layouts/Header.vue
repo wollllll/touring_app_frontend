@@ -1,4 +1,5 @@
 <script setup>
+import IconWithText from '@/components/IconWithText'
 import { storeService } from '@/services/storeService'
 
 const APP_NAME = process.env.VUE_APP_APP_NAME
@@ -11,8 +12,9 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
         <router-link
           :to="{ name: 'top' }"
           class="btn btn-ghost text-lg normal-case"
-          >{{ APP_NAME }}</router-link
         >
+          {{ APP_NAME }}
+        </router-link>
       </div>
       <div class="flex-none gap-2">
         <router-link
@@ -20,7 +22,7 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
           @click="storeService.commit.setIsShowSearchModal(true)"
           class="hover:opacity-75"
         >
-          <i class="bi bi-search text-xl" />
+          <Icon class="bi-search text-xl" />
         </router-link>
         <div class="dropdown dropdown-end ml-3">
           <label tabindex="0" class="btn btn-ghost btn-circle avatar">
@@ -34,12 +36,12 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
           >
             <li>
               <router-link :to="{ name: 'user_show', params: { id: 1 } }">
-                <i class="bi bi-person text-lg" />アカウント
+                <IconWithText class="bi-person">アカウント</IconWithText>
               </router-link>
             </li>
             <li>
               <router-link :to="{ name: 'auth_index' }">
-                <i class="bi bi-person text-lg" />アカウント登録
+                <IconWithText class="bi-person">アカウント登録</IconWithText>
               </router-link>
             </li>
             <li>
@@ -47,12 +49,14 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
                 :to="{ name: 'top' }"
                 @click="storeService.commit.setIsCreateSpotModal(true)"
               >
-                <i class="bi bi-geo-alt text-lg" />スポットの投稿
+                <IconWithText class="bi-geo-alt">スポットの投稿</IconWithText>
               </router-link>
             </li>
             <li>
               <button type="button">
-                <i class="bi bi-box-arrow-right text-lg" />ログアウト
+                <IconWithText class="bi-box-arrow-right"
+                  >ログアウト</IconWithText
+                >
               </button>
             </li>
           </ul>

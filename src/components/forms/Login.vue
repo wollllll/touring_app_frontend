@@ -1,4 +1,5 @@
 <script setup>
+import IconWithText from '@/components/IconWithText'
 import GoogleLogin from '@/components/buttons/GoogleLogin'
 import LineLogin from '@/components/buttons/LineLogin'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
@@ -28,7 +29,7 @@ import Input from '@/components/forms/Input'
         placeholder="パスワード"
       />
       <PrimaryButton>
-        <i class="bi bi-lock text-xl" />&nbsp;ログイン
+        <IconWithText class="bi-lock">ログイン</IconWithText>
       </PrimaryButton>
     </div>
   </div>

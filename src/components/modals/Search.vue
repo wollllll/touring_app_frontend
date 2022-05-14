@@ -1,4 +1,5 @@
 <script setup>
+import IconWithText from '@/components/IconWithText'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Input from '@/components/forms/Input'
 import Base from '@/components/modals/Base'
@@ -10,7 +11,9 @@ const isShowModal = storeService.getters.isShowSearchModal()
 
 <template>
   <Base :class="isShowModal ? 'modal-open' : ''">
-    <template #title> <i class="bi bi-search" />&nbsp;スポットを検索 </template>
+    <template #title>
+      <IconWithText icon-class="bi-search">スポットを検索</IconWithText>
+    </template>
     <template #close>
       <CloseButton @click="storeService.commit.setIsShowSearchModal(false)" />
     </template>
@@ -38,7 +41,7 @@ const isShowModal = storeService.getters.isShowSearchModal()
       </div>
       <div class="mt-5 text-right">
         <PrimaryButton class="btn-md w-auto">
-          <i class="bi bi-search" />&nbsp;検索
+          <IconWithText icon-class="bi-search text-sm">検索</IconWithText>
         </PrimaryButton>
       </div>
     </template>

@@ -1,4 +1,6 @@
 <script setup>
+import IconWithText from '@/components/IconWithText'
+
 const props = defineProps({
   spot: Object,
 })
@@ -17,13 +19,16 @@ const props = defineProps({
     </figure>
     <div class="w-3/5 pl-4">
       <h2 class="font-bold">
-        <i class="bi bi-geo-alt" />&nbsp;{{ spot.title }}
+        <IconWithText icon-class="bi-geo-alt">{{ spot.title }}</IconWithText>
       </h2>
       <div class="flex mt-2 text-sm">
         <div>
           <label tabindex="0" class="avatar">
             <div class="w-7 rounded-full shadow">
-              <img src="https://api.lorem.space/image/face?hash=33791" />
+              <img
+                src="https://api.lorem.space/image/face?hash=33791"
+                alt="アバター"
+              />
             </div>
           </label>
         </div>

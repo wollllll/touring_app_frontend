@@ -1,5 +1,6 @@
 <script setup>
 import Carousel from '@/components/Carousel'
+import IconWithText from '@/components/IconWithText'
 import Base from '@/components/modals/Base'
 import CloseButton from '@/components/modals/CloseButton'
 import Profile from '@/components/users/Profile'
@@ -14,7 +15,7 @@ const isShowModal = storeService.getters.isShowSpotModal()
 <template>
   <Base :class="isShowModal ? 'modal-open' : ''">
     <template #title>
-      <i class="bi bi-geo-alt" />&nbsp;{{ show.title }}
+      <IconWithText class="bi-geo-alt">{{ show.title }}</IconWithText>
     </template>
     <template #close>
       <CloseButton @click="storeService.commit.setIsShowSpotModal(false)" />

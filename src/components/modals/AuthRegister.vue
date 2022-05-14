@@ -1,4 +1,5 @@
 <script setup>
+import IconWithText from '@/components/IconWithText'
 import Information from '@/components/alerts/Information'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Input from '@/components/forms/Input'
@@ -12,7 +13,7 @@ const isShowModal = storeService.getters.isAuthRegisterModal()
 <template>
   <Base :class="isShowModal ? 'modal-open' : ''">
     <template #title>
-      <i class="bi bi-person-plus text-xl" />&nbsp;アカウント登録
+      <IconWithText class="bi-person-plus">アカウント登録</IconWithText>
     </template>
     <template #close>
       <CloseButton @click="storeService.commit.setIsAuthRegisterModal(false)" />
@@ -41,7 +42,7 @@ const isShowModal = storeService.getters.isAuthRegisterModal()
       />
       <PrimaryButton>
         <router-link :to="{ name: 'auth_register' }">
-          <i class="bi bi-person-plus text-xl" />&nbsp;登録
+          <IconWithText class="bi-person-plus">登録</IconWithText>
         </router-link>
       </PrimaryButton>
       <Information class="mt-5">

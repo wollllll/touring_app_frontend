@@ -3,6 +3,8 @@ import complete from '@/pages/auth/complete'
 import register from '@/pages/auth/register'
 import top from '@/pages/top'
 import userEdit from '@/pages/users/edit'
+import userFollow from '@/pages/users/follow'
+import userFollower from '@/pages/users/follower'
 import userShow from '@/pages/users/show'
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -38,6 +40,16 @@ export const router = createRouter({
       path: '/users/:id/edit',
       name: 'user_edit',
       component: userEdit,
+    },
+    {
+      path: '/users/:id/follow',
+      name: 'user_follow',
+      component: userFollow,
+    },
+    {
+      path: '/users/:id/follower',
+      name: 'user_follower',
+      component: userFollower,
     },
   ],
 })
