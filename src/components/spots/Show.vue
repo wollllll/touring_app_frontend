@@ -5,7 +5,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="hover:opacity-75 flex cursor-pointer">
+  <div class=" flex cursor-pointer hover:opacity-75">
     <figure class="w-2/5">
       <div class="card">
         <img
