@@ -29,7 +29,7 @@ import Input from '@/components/forms/Input'
         placeholder="パスワード"
       />
       <PrimaryButton>
-        <IconWithText icon-class="bi-lock">ログイン</IconWithText>
+        <IconWithText icon-class="bi-lock"> ログイン </IconWithText>
       </PrimaryButton>
     </div>
   </div>

@@ -6,8 +6,8 @@ const props = defineProps({
 </script>
 
 <template>
-  <label :for="props.id" class="cursor-pointer">
+  <label :for="id" class="cursor-pointer">
     <slot />
-    <span v-if="props.required" class="text-red-500">*</span>
+    <span v-if="required" class="text-red-500">&nbsp;*</span>
   </label>
 </template>

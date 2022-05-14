@@ -13,7 +13,7 @@ const isShowModal = storeService.getters.isCreateSpotModal()
 <template>
   <Base :class="isShowModal ? 'modal-open' : ''">
     <template #title>
-      <IconWithText icon-class="bi-geo-alt">スポットの投稿</IconWithText>
+      <IconWithText icon-class="bi-geo-alt"> スポットの投稿 </IconWithText>
     </template>
     <template #close>
       <CloseButton @click="storeService.commit.setIsCreateSpotModal(false)" />
@@ -54,7 +54,7 @@ const isShowModal = storeService.getters.isCreateSpotModal()
       </div>
       <div class="mt-5 text-right">
         <PrimaryButton class="btn-md w-auto">
-          <IconWithText icon-class="bi bi-pencil-square">投稿</IconWithText>
+          <IconWithText icon-class="bi bi-pencil-square"> 投稿 </IconWithText>
         </PrimaryButton>
       </div>
     </template>

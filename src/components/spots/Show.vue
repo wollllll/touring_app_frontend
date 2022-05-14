@@ -19,7 +19,9 @@ const props = defineProps({
     </figure>
     <div class="w-3/5 pl-4">
       <h2 class="font-bold">
-        <IconWithText icon-class="bi-geo-alt">{{ spot.title }}</IconWithText>
+        <IconWithText icon-class="bi-geo-alt">
+          {{ spot.title }}
+        </IconWithText>
       </h2>
       <div class="flex mt-2 text-sm">
         <div tabindex="0" class="avatar">

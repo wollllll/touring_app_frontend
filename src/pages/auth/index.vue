@@ -6,7 +6,7 @@ import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Login from '@/components/forms/Login'
 import Base from '@/components/layouts/Base'
 import Section from '@/components/layouts/Section'
-import { storeService } from '@/services/storeService'
+import { router } from '@/router'
 </script>
 
 <template>
@@ -20,9 +20,7 @@ import { storeService } from '@/services/storeService'
             アカウントを登録するとスポットのお気に入り追加や他の人のアカウントをフォローすることが出来ます。
           </p>
         </Information>
-        <PrimaryButton
-          @click="storeService.commit.setIsAuthRegisterModal(true)"
-        >
+        <PrimaryButton @click="router.push({ name: 'auth_register' })">
           <IconWithText icon-class="bi-person-plus"
             >アカウントを新規登録</IconWithText
           >

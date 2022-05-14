@@ -39,14 +39,14 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
           >
             <li>
               <router-link :to="{ name: 'user_show', params: { id: 1 } }">
-                <IconWithText icon-class="bi-person">アカウント</IconWithText>
+                <IconWithText icon-class="bi-person"> アカウント </IconWithText>
               </router-link>
             </li>
             <li>
               <router-link :to="{ name: 'auth_index' }">
-                <IconWithText icon-class="bi-person"
-                  >アカウント登録</IconWithText
-                >
+                <IconWithText icon-class="bi-person">
+                  アカウント登録
+                </IconWithText>
               </router-link>
             </li>
             <li>
@@ -54,9 +54,9 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
                 :to="{ name: 'top' }"
                 @click="storeService.commit.setIsCreateSpotModal(true)"
               >
-                <IconWithText icon-class="bi-geo-alt"
-                  >スポットの投稿</IconWithText
-                >
+                <IconWithText icon-class="bi-geo-alt">
+                  スポットの投稿
+                </IconWithText>
               </router-link>
             </li>
             <li>

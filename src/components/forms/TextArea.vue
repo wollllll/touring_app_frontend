@@ -13,11 +13,11 @@ const props = defineProps({
 
 <template>
   <Base>
-    <Label :for="props.id" :required="props.required">{{ props.label }}</Label>
+    <Label :for="id" :required="required">{{ label }}</Label>
     <textarea
-      :placeholder="props.placeholder"
-      :id="props.id"
-      :rows="props.rows"
+      :placeholder="placeholder"
+      :id="id"
+      :rows="rows"
       class="textarea textarea-bordered w-full mt-1"
     ></textarea>
   </Base>

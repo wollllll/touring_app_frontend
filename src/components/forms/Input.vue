@@ -14,14 +14,14 @@ const props = defineProps({
 
 <template>
   <Base>
-    <Label v-if="props.label" :for="props.id" :required="props.required">
-      {{ props.label }}
+    <Label v-if="label" :for="id" :required="required">
+      {{ label }}
     </Label>
     <input
-      :type="props.type"
-      :placeholder="props.placeholder"
-      :id="props.id"
-      :disabled="props.disabled"
+      :type="type"
+      :placeholder="placeholder"
+      :id="id"
+      :disabled="disabled"
       class="input input-bordered w-full mt-1"
     />
   </Base>

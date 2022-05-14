@@ -1,6 +1,5 @@
 <script setup>
 import Header from '@/components/layouts/Header'
-import AuthRegisterModal from '@/components/modals/AuthRegister'
 import SearchModal from '@/components/modals/Search'
 import CreateSpotModal from '@/components/modals/spots/Create'
 import ShowSpotModal from '@/components/modals/spots/Show'
@@ -12,7 +11,6 @@ import ShowSpotModal from '@/components/modals/spots/Show'
     <main class="lg:px-40 flex-grow">
       <slot />
     </main>
-    <AuthRegisterModal />
     <SearchModal />
     <ShowSpotModal />
     <CreateSpotModal />
