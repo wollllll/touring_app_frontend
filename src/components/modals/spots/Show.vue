@@ -26,7 +26,6 @@ const isShowModal = storeService.getters.isShowSpotModal()
       <div class="text-right">
         <label class="swap">
           <input type="checkbox" />
-
           <i class="bi bi-star swap-off sm:text-xl text-2xl fill-current" />
           <i
             class="bi bi-star-fill swap-on sm:text-xl text-2xl text-yellow-400 fill-current"

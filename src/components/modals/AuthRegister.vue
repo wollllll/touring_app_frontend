@@ -31,7 +31,6 @@ const isShowModal = storeService.getters.isAuthRegisterModal()
         id="register_email"
         placeholder="メールアドレス"
         :required="true"
-        class="mt-3"
       />
       <Input
         type="password"
@@ -39,7 +38,6 @@ const isShowModal = storeService.getters.isAuthRegisterModal()
         id="register_password"
         placeholder="パスワード"
         :required="true"
-        class="mt-3"
       />
       <PrimaryButton>
         <router-link :to="{ name: 'auth_register' }">

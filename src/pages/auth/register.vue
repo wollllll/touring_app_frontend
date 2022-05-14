@@ -7,7 +7,7 @@ import Section from '@/components/layouts/Section'
 <template>
   <Base>
     <div class="xl:px-64 p-5">
-      <Section class="mt-0">
+      <Section>
         <Information>
           <p>まだアカウントの登録が完了していません。</p>
           <p>ご登録のメールアドレス宛てに確認メールを送信しました。</p>

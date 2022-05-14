@@ -25,7 +25,6 @@ const isShowModal = storeService.getters.isCreateSpotModal()
         id="create_name"
         placeholder="例）静岡の隠れスポット"
         :required="true"
-        class="mt-3"
       />
       <TextArea
         label="投稿内容"
@@ -33,16 +32,15 @@ const isShowModal = storeService.getters.isCreateSpotModal()
         placeholder="例）景色が綺麗でおすすめです！"
         :required="true"
         :rows="5"
-        class="mt-3"
       />
-      <div class="flex">
+      <div class="flex mt-3">
         <Input
           type="text"
           label="緯度"
           id="create_latitude"
           placeholder="緯度"
           :disabled="true"
-          class="mt-3 mr-1"
+          class="mt-0 mr-1"
         />
         <Input
           type="text"
@@ -50,10 +48,10 @@ const isShowModal = storeService.getters.isCreateSpotModal()
           id="create_longitude"
           placeholder="経度"
           :disabled="true"
-          class="mt-3 ml-1"
+          class="mt-0 ml-1"
         />
       </div>
-      <div class="text-right">
+      <div class="mt-5 text-right">
         <PrimaryButton class="btn-md w-auto">
           <i class="bi bi-pencil-square"></i>&nbsp;投稿
         </PrimaryButton>

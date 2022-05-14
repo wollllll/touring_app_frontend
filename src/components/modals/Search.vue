@@ -15,7 +15,7 @@ const isShowModal = storeService.getters.isShowSearchModal()
       <CloseButton @click="storeService.commit.setIsShowSearchModal(false)" />
     </template>
     <template #content>
-      <Input type="text" placeholder="検索" class="mt-0" />
+      <Input type="text" placeholder="検索" />
       <div class="divider" />
       <p class="font-bold">条件付きで検索</p>
       <div class="lg:grid-cols-5 grid grid-cols-1">
@@ -36,7 +36,7 @@ const isShowModal = storeService.getters.isShowSearchModal()
           </div>
         </div>
       </div>
-      <div class="text-right">
+      <div class="mt-5 text-right">
         <PrimaryButton class="btn-md w-auto">
           <i class="bi bi-search" />&nbsp;検索
         </PrimaryButton>

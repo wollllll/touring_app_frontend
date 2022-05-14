@@ -11,7 +11,7 @@ import { storeService } from '@/services/storeService'
 <template>
   <Base>
     <div class="xl:px-64 p-5">
-      <Section class="mt-0">
+      <Section>
         <ViewTitle>アカウント登録</ViewTitle>
         <Information>
           <p>スポットを投稿するにはアカウントを登録する必要があります。</p>

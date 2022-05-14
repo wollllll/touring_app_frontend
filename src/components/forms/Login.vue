@@ -14,13 +14,12 @@ import Input from '@/components/forms/Input'
       <GoogleLogin class="lg:mt-0" />
     </div>
     <div class="divider lg:divider-horizontal" />
-    <div class="place-items-center lg:py-5 grid flex-grow py-0">
+    <div class="place-items-center lg:py-5 grid flex-grow">
       <Input
         type="login_email"
         label="メールアドレス"
         id="email"
         placeholder="メールアドレス"
-        class="mt-0"
       />
       <Input
         type="login_password"

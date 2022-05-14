@@ -1,6 +1,7 @@
 <script setup>
 import ViewTitle from '@/components/ViewTitle'
 import Base from '@/components/layouts/Base'
+import Section from '@/components/layouts/Section'
 import ShowSpot from '@/components/spots/Show'
 import Profile from '@/components/users/Profile'
 import { spots } from '@/fakers/spot'
@@ -21,15 +22,15 @@ onUnmounted(() => {
 <template>
   <Base>
     <div class="xl:px-64 p-5">
-      <section>
+      <Section>
         <ViewTitle>アカウント</ViewTitle>
         <div class="card bg-white shadow">
           <div class="card-body">
             <Profile />
           </div>
         </div>
-      </section>
-      <section class="mt-5">
+      </Section>
+      <Section>
         <ViewTitle>投稿スポット</ViewTitle>
         <ul class="lg:grid lg:grid-cols-2">
           <li
@@ -41,7 +42,7 @@ onUnmounted(() => {
             <ShowSpot :spot="spot" @click="setShowSpot(spot)" />
           </li>
         </ul>
-      </section>
+      </Section>
     </div>
   </Base>
 </template>

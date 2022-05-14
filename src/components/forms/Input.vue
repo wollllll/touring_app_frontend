@@ -1,4 +1,5 @@
 <script setup>
+import Base from '@/components/forms/Base'
 import Label from '@/components/forms/Label'
 
 const props = defineProps({
@@ -12,7 +13,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="w-full mt-3">
+  <Base>
     <Label v-if="props.label" :for="props.id" :required="props.required">
       {{ props.label }}
     </Label>
@@ -23,5 +24,5 @@ const props = defineProps({
       :disabled="props.disabled"
       class="input input-bordered w-full mt-1"
     />
-  </div>
+  </Base>
 </template>
