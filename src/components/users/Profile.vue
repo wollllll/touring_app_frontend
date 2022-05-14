@@ -1,34 +1,53 @@
 <script setup>
+import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Avatar from '@/components/users/Avatar'
 import { storeService } from '@/services/storeService'
+import { onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
 
-const pushUserShow = () => {
+const props = defineProps({
+  showFollow: {
+    type: Boolean,
+    default: false,
+  },
+})
+onUnmounted(() => {
   storeService.commit.setIsShowSpotModal(false)
-  router.push({ name: 'user_show', params: { id: 1 } })
-}
+})
 </script>
 
 <template>
   <article>
-    <div class="flex">
-      <Avatar class="btn btn-ghost btn-circle" @click="pushUserShow" />
-      <p class="my-auto ml-3">
-        加藤タカヒロ
-        <router-link
-          :to="{ name: 'user_edit', params: { id: 1 } }"
-          class="hover:opacity-75"
+    <div class="flex justify-between">
+      <div class="flex">
+        <div
+          class="flex cursor-pointer"
+          @click="router.push({ name: 'user_show', params: { id: 1 } })"
         >
-          <i class="bi bi-gear text-lg" />
-        </router-link>
-      </p>
+          <Avatar class="btn btn-ghost btn-circle" />
+          <p class="my-auto ml-3 font-bold">加藤タカヒロ</p>
+        </div>
+        <div class="flex items-center ml-3">
+          <!-- todo: ログインユーザー以外は表示しない -->
+          <router-link
+            :to="{ name: 'user_edit', params: { id: 1 } }"
+            class="hover:opacity-75"
+          >
+            <i class="bi bi-gear text-lg" />
+          </router-link>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <!-- todo: ログインユーザー以外は表示しない -->
+        <PrimaryButton class="btn-sm w-auto mt-0"> フォロー中 </PrimaryButton>
+      </div>
     </div>
     <p class="mt-3">
       プロフィールプロフィールプロフィールプロフィールプロフィールプロフィールプロフィールプロフィールプロフィールプロフィール
     </p>
-    <p class="mt-3 text-sm text-right">
+    <p v-if="showFollow" class="mt-3 text-sm text-right">
       <router-link
         :to="{ name: 'user_follow', params: { id: 1 } }"
         class="hover:opacity-75"

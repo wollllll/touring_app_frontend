@@ -1,6 +1,6 @@
 <script setup>
+import HeadingTitle from '@/components/HeadingTitle'
 import Step from '@/components/Step'
-import ViewTitle from '@/components/ViewTitle'
 import Information from '@/components/alerts/Information'
 import Base from '@/components/layouts/Base'
 import Section from '@/components/layouts/Section'
@@ -9,7 +9,7 @@ import Section from '@/components/layouts/Section'
 <template>
   <Base>
     <div class="xl:px-64 p-5">
-      <ViewTitle>メールアドレス確認</ViewTitle>
+      <HeadingTitle>メールアドレス確認</HeadingTitle>
       <Step />
       <Section>
         <Information>

@@ -1,6 +1,6 @@
 <script setup>
+import HeadingTitle from '@/components/HeadingTitle'
 import IconWithText from '@/components/IconWithText'
-import ViewTitle from '@/components/ViewTitle'
 import Information from '@/components/alerts/Information'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Login from '@/components/forms/Login'
@@ -15,7 +15,7 @@ const router = useRouter()
   <Base>
     <div class="xl:px-64 p-5">
       <Section>
-        <ViewTitle>アカウント登録</ViewTitle>
+        <HeadingTitle>アカウント登録</HeadingTitle>
         <Information>
           <p>スポットを投稿するにはアカウントを登録する必要があります。</p>
           <p>
@@ -29,7 +29,7 @@ const router = useRouter()
         </PrimaryButton>
       </Section>
       <Section>
-        <ViewTitle>ログイン</ViewTitle>
+        <HeadingTitle>ログイン</HeadingTitle>
         <Login />
       </Section>
     </div>

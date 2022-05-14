@@ -1,10 +1,10 @@
 <script setup>
-import ViewTitle from '@/components/ViewTitle'
+import HeadingTitle from '@/components/HeadingTitle'
 import Base from '@/components/layouts/Base'
 import Section from '@/components/layouts/Section'
 import ShowSpot from '@/components/spots/Show'
 import Profile from '@/components/users/Profile'
-import { spots } from '@/fakers/spot'
+import { spots } from '@/fakers/spots'
 import { spotService } from '@/services/spotService'
 import { storeService } from '@/services/storeService'
 import { onUnmounted, ref } from 'vue'
@@ -23,15 +23,15 @@ onUnmounted(() => {
   <Base>
     <div class="xl:px-64 p-5">
       <Section>
-        <ViewTitle>アカウント</ViewTitle>
+        <HeadingTitle>アカウント</HeadingTitle>
         <div class="card bg-white shadow">
           <div class="card-body">
-            <Profile />
+            <Profile :show-follow="true" />
           </div>
         </div>
       </Section>
       <Section>
-        <ViewTitle>投稿スポット</ViewTitle>
+        <HeadingTitle>投稿スポット</HeadingTitle>
         <ul class="lg:grid lg:grid-cols-2">
           <li
             :key="spot.id"

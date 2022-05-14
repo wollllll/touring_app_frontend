@@ -1,7 +1,7 @@
 <script setup>
+import HeadingTitle from '@/components/HeadingTitle'
 import IconWithText from '@/components/IconWithText'
 import Step from '@/components/Step'
-import ViewTitle from '@/components/ViewTitle'
 import Information from '@/components/alerts/Information'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Input from '@/components/forms/Input'
@@ -15,7 +15,7 @@ const router = useRouter()
 <template>
   <Base>
     <div class="xl:px-64 p-5">
-      <ViewTitle>メールアドレス入力</ViewTitle>
+      <HeadingTitle>メールアドレス入力</HeadingTitle>
       <Step />
       <Section>
         <Input
