@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="w-full">
+  <div class="w-full mt-3">
     <Label v-if="props.label" :for="props.id" :required="props.required">
       {{ props.label }}
     </Label>

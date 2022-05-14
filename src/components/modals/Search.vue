@@ -1,8 +1,8 @@
 <script setup>
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Input from '@/components/forms/Input'
-import Base from '@/components/modals/layouts/Base'
-import CloseButton from '@/components/modals/layouts/CloseButton'
+import Base from '@/components/modals/Base'
+import CloseButton from '@/components/modals/CloseButton'
 import { storeService } from '@/services/storeService'
 
 const isShowModal = storeService.getters.isShowSearchModal()
@@ -36,7 +36,7 @@ const isShowModal = storeService.getters.isShowSearchModal()
           </div>
         </div>
       </div>
-      <div class="mt-5 text-right">
+      <div class="text-right">
         <PrimaryButton class="btn-md w-auto">
           <i class="bi bi-search" />&nbsp;検索
         </PrimaryButton>

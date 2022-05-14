@@ -1,4 +1,5 @@
 <script setup>
+import ViewTitle from '@/components/ViewTitle'
 import Information from '@/components/alerts/Information'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Login from '@/components/forms/Login'
@@ -10,7 +11,8 @@ import { storeService } from '@/services/storeService'
   <Base>
     <div class="xl:px-64 p-5">
       <section>
-        <Information>
+        <ViewTitle>アカウント登録</ViewTitle>
+        <Information class="mt-3">
           <p>スポットを投稿するにはアカウントを登録する必要があります。</p>
           <p>
             アカウントを登録するとスポットのお気に入り追加や他の人のアカウントをフォローすることが出来ます。
@@ -24,10 +26,8 @@ import { storeService } from '@/services/storeService'
         </PrimaryButton>
       </section>
       <section class="mt-10">
-        <Information>
-          <p>アカウントをお持ちの方はこちら</p>
-        </Information>
-        <Login class="lg:mt-5 mt-0" />
+        <ViewTitle>ログイン</ViewTitle>
+        <Login class="lg:mt-5 mt-3" />
       </section>
     </div>
   </Base>

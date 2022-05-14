@@ -2,8 +2,8 @@
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Input from '@/components/forms/Input'
 import TextArea from '@/components/forms/TextArea'
-import Base from '@/components/modals/layouts/Base'
-import CloseButton from '@/components/modals/layouts/CloseButton'
+import Base from '@/components/modals/Base'
+import CloseButton from '@/components/modals/CloseButton'
 import { storeService } from '@/services/storeService'
 
 const isShowModal = storeService.getters.isCreateSpotModal()
@@ -53,7 +53,7 @@ const isShowModal = storeService.getters.isCreateSpotModal()
           class="mt-3 ml-1"
         />
       </div>
-      <div class="mt-5 text-right">
+      <div class="text-right">
         <PrimaryButton class="btn-md w-auto">
           <i class="bi bi-pencil-square"></i>&nbsp;投稿
         </PrimaryButton>

@@ -2,8 +2,8 @@
 import Information from '@/components/alerts/Information'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Input from '@/components/forms/Input'
-import Base from '@/components/modals/layouts/Base'
-import CloseButton from '@/components/modals/layouts/CloseButton'
+import Base from '@/components/modals/Base'
+import CloseButton from '@/components/modals/CloseButton'
 import { storeService } from '@/services/storeService'
 
 const isShowModal = storeService.getters.isAuthRegisterModal()
@@ -41,7 +41,7 @@ const isShowModal = storeService.getters.isAuthRegisterModal()
         :required="true"
         class="mt-3"
       />
-      <PrimaryButton class="mt-5">
+      <PrimaryButton>
         <router-link :to="{ name: 'auth_register' }">
           <i class="bi bi-person-plus text-xl" />&nbsp;登録
         </router-link>

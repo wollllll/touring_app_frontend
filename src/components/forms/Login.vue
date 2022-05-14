@@ -8,10 +8,10 @@ import Input from '@/components/forms/Input'
 
 <template>
   <div class="lg:flex-row flex flex-col">
-    <div class="place-items-center lg:py-5 grid flex-grow pt-5">
-      <TwitterLogin />
-      <LineLogin class="lg:mt-0 mt-5" />
-      <GoogleLogin class="lg:mt-0 mt-5" />
+    <div class="place-items-center lg:py-5 grid flex-grow">
+      <TwitterLogin class="mt-0" />
+      <LineLogin class="lg:mt-0" />
+      <GoogleLogin class="lg:mt-0" />
     </div>
     <div class="divider lg:divider-horizontal" />
     <div class="place-items-center lg:py-5 grid flex-grow py-0">
@@ -20,15 +20,15 @@ import Input from '@/components/forms/Input'
         label="メールアドレス"
         id="email"
         placeholder="メールアドレス"
+        class="mt-0"
       />
       <Input
         type="login_password"
         label="パスワード"
         id="password"
         placeholder="パスワード"
-        class="mt-3"
       />
-      <PrimaryButton class="mt-5">
+      <PrimaryButton>
         <i class="bi bi-lock text-xl" />&nbsp;ログイン
       </PrimaryButton>
     </div>

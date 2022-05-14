@@ -41,7 +41,7 @@ onUnmounted(() => {
       :options="{ position: { lat: spot.latitude, lng: spot.longitude } }"
     />
     <PrimaryButton
-      class="btn-sm top-3 absolute inset-x-0 w-2/3 max-w-xs mx-auto"
+      class="btn-sm top-3 absolute inset-x-0 w-2/3 max-w-xs mx-auto mt-0"
     >
       <i class="bi bi-search text-lg" />&nbsp;中心を検索
     </PrimaryButton>
