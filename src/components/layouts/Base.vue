@@ -6,15 +6,15 @@ import Modal from '@/components/layouts/Modal'
 
 <template>
   <div>
-    <div class="secondary-bg-color flex flex-col h-screen">
+    <div class="secondary-bg-color scroll-custom flex flex-col h-screen">
       <Header class="lg:px-40 shadow" />
-      <main class="lg:px-40 grow">
+      <main class="scroll-hidden lg:px-40 grow overflow-y-scroll">
         <div class="xl:px-64 p-5">
           <slot />
         </div>
       </main>
     </div>
-    <Footer />
+    <Footer class="lg:px-40 shadow" />
     <Modal />
   </div>
 </template>

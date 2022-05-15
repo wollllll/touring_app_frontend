@@ -4,7 +4,7 @@ import Section from '@/components/layouts/Section'
 
 <template>
   <div class="modal">
-    <div class="modal-box relative">
+    <div class="modal-box scroll-hidden relative">
       <div class="grid grid-cols-12">
         <div class="col-span-11">
           <h3 class="text-lg font-bold">
