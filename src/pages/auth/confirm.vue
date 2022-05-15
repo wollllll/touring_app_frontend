@@ -11,7 +11,7 @@ import Step from '@/components/viewParts/Step'
     <Section>
       <HeadingTitle>メールアドレス確認</HeadingTitle>
       <Step />
-      <Information>
+      <Information class="mt-5">
         <p>まだアカウントの登録が完了していません。</p>
         <p>ご登録のメールアドレス宛てに確認メールを送信しました。</p>
         <p>メールに記載のURLを押して承認をしてください。</p>

@@ -11,7 +11,7 @@ import Step from '@/components/viewParts/Step'
     <Section>
       <HeadingTitle>アカウント登録完了</HeadingTitle>
       <Step />
-      <Information>
+      <Information class="mt-5">
         <p>アカウントの登録が完了しました！</p>
         <p>お楽しみください。</p>
       </Information>
