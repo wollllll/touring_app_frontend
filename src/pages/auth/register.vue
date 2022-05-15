@@ -14,29 +14,25 @@ const router = useRouter()
 
 <template>
   <Base>
-    <div class="xl:px-64 p-5">
-      <HeadingTitle>メールアドレス入力</HeadingTitle>
-      <Step />
-      <Section>
-        <Input
-          type="text"
-          label="メールアドレス"
-          id="register_email"
-          placeholder="メールアドレス"
-          :required="true"
-        />
-        <Information class="mt-5">
-          <p>
-            利用規約、プライバシーポリシーに同意したうえでメールアドレスを送信してください。
-          </p>
-        </Information>
-        <div>re chapter</div>
-        <PrimaryButton @click="router.push({ name: 'auth_confirm' })">
-          <IconWithText icon-class="bi-send">
-            メールアドレスを送信
-          </IconWithText>
-        </PrimaryButton>
-      </Section>
-    </div>
+    <HeadingTitle>メールアドレス入力</HeadingTitle>
+    <Step />
+    <Section>
+      <Input
+        type="text"
+        label="メールアドレス"
+        id="register_email"
+        placeholder="メールアドレス"
+        :required="true"
+      />
+      <Information class="mt-5">
+        <p>
+          利用規約、プライバシーポリシーに同意したうえでメールアドレスを送信してください。
+        </p>
+      </Information>
+      <div>re chapter</div>
+      <PrimaryButton @click="router.push({ name: 'auth_confirm' })">
+        <IconWithText icon-class="bi-send"> メールアドレスを送信 </IconWithText>
+      </PrimaryButton>
+    </Section>
   </Base>
 </template>

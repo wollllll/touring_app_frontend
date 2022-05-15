@@ -18,7 +18,7 @@ const setShowSpot = (spot) => {
 
 <template>
   <Base>
-    <div class="xl:px-64 p-5">
+    <div class="">
       <Section>
         <HeadingTitle>プロフィール</HeadingTitle>
         <div class="card bg-white shadow">

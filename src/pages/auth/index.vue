@@ -13,25 +13,23 @@ const router = useRouter()
 
 <template>
   <Base>
-    <div class="xl:px-64 p-5">
-      <Section>
-        <HeadingTitle>アカウント登録</HeadingTitle>
-        <Information>
-          <p>スポットを投稿するにはアカウントを登録する必要があります。</p>
-          <p>
-            アカウントを登録するとスポットのお気に入り追加や他の人のアカウントをフォローすることが出来ます。
-          </p>
-        </Information>
-        <PrimaryButton @click="router.push({ name: 'auth_register' })">
-          <IconWithText icon-class="bi-person-plus"
-            >アカウントを新規登録</IconWithText
-          >
-        </PrimaryButton>
-      </Section>
-      <Section>
-        <HeadingTitle>ログイン</HeadingTitle>
-        <Login />
-      </Section>
-    </div>
+    <Section>
+      <HeadingTitle>アカウント登録</HeadingTitle>
+      <Information>
+        <p>スポットを投稿するにはアカウントを登録する必要があります。</p>
+        <p>
+          アカウントを登録するとスポットのお気に入り追加や他の人のアカウントをフォローすることが出来ます。
+        </p>
+      </Information>
+      <PrimaryButton @click="router.push({ name: 'auth_register' })">
+        <IconWithText icon-class="bi-person-plus"
+          >アカウントを新規登録</IconWithText
+        >
+      </PrimaryButton>
+    </Section>
+    <Section>
+      <HeadingTitle>ログイン</HeadingTitle>
+      <Login />
+    </Section>
   </Base>
 </template>

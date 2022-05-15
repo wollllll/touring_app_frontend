@@ -7,10 +7,8 @@ import Step from '@/components/viewParts/Step'
 
 <template>
   <Base>
-    <div class="xl:px-64 p-5">
-      <HeadingTitle>アカウント設定</HeadingTitle>
-      <Step />
-      <UserEdit />
-    </div>
+    <HeadingTitle>アカウント設定</HeadingTitle>
+    <Step />
+    <UserEdit />
   </Base>
 </template>

@@ -6,7 +6,7 @@ import Connection from '@/components/users/Connection'
 
 <template>
   <Base>
-    <div class="xl:px-64 p-5">
+    <div>
       <Section>
         <Connection heading-title="フォロー一覧" />
       </Section>

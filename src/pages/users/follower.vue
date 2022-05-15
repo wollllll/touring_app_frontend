@@ -6,10 +6,8 @@ import Connection from '@/components/users/Connection'
 
 <template>
   <Base>
-    <div class="xl:px-64 p-5">
-      <Section>
-        <Connection heading-title="フォロワー一覧" />
-      </Section>
-    </div>
+    <Section>
+      <Connection heading-title="フォロワー一覧" />
+    </Section>
   </Base>
 </template>

@@ -35,9 +35,7 @@ switch (useRoute().name) {
         入力
       </li>
       <li class="step" :class="isAuthConfirm ? 'step-primary' : ''">確認</li>
-      <li class="step" :class="isAuthSetting ? 'step-primary' : ''">
-        アカウント設定
-      </li>
+      <li class="step" :class="isAuthSetting ? 'step-primary' : ''">設定</li>
       <li class="step" :class="isAuthCompleteStep ? 'step-primary' : ''">
         登録完了！
       </li>

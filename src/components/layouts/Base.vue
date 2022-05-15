@@ -1,18 +1,16 @@
 <script setup>
 import Header from '@/components/layouts/Header'
-import SearchModal from '@/components/modals/Search'
-import CreateSpotModal from '@/components/modals/spots/Create'
-import ShowSpotModal from '@/components/modals/spots/Show'
+import Modal from '@/components/layouts/Modal'
 </script>
 
 <template>
-  <div class="secondary-bg-color flex flex-col h-screen">
+  <div class="flex flex-col h-screen">
     <Header class="lg:px-40 shadow" />
-    <main class="lg:px-40 flex-grow">
-      <slot />
+    <main class="lg:px-40 secondary-bg-color flex-grow">
+      <div class="xl:px-64 p-5">
+        <slot />
+      </div>
     </main>
-    <SearchModal />
-    <ShowSpotModal />
-    <CreateSpotModal />
+    <Modal />
   </div>
 </template>

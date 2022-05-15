@@ -7,11 +7,9 @@ import HeadingTitle from '@/components/viewParts/HeadingTitle'
 
 <template>
   <Base>
-    <div class="xl:px-64 p-5">
-      <Section>
-        <HeadingTitle>アカウント設定</HeadingTitle>
-        <UserEdit />
-      </Section>
-    </div>
+    <Section>
+      <HeadingTitle>アカウント設定</HeadingTitle>
+      <UserEdit />
+    </Section>
   </Base>
 </template>
