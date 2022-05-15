@@ -4,6 +4,7 @@ import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Login from '@/components/formParts/Login'
 import Base from '@/components/layouts/Base'
 import Section from '@/components/layouts/Section'
+import Breadcrumb from '@/components/viewParts/Breadcrumb'
 import HeadingTitle from '@/components/viewParts/HeadingTitle'
 import IconWithText from '@/components/viewParts/IconWithText'
 import { useRouter } from 'vue-router'
@@ -13,6 +14,7 @@ const router = useRouter()
 
 <template>
   <Base>
+    <Breadcrumb />
     <Section>
       <HeadingTitle>アカウント登録</HeadingTitle>
       <Information>

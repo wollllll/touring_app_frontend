@@ -3,6 +3,7 @@ import Base from '@/components/layouts/Base'
 import Section from '@/components/layouts/Section'
 import ShowSpot from '@/components/spots/Show'
 import Profile from '@/components/users/Profile'
+import Breadcrumb from '@/components/viewParts/Breadcrumb'
 import HeadingTitle from '@/components/viewParts/HeadingTitle'
 import { spots } from '@/fakers/spots'
 import { spotService } from '@/services/spotService'
@@ -18,6 +19,7 @@ const setShowSpot = (spot) => {
 
 <template>
   <Base>
+    <Breadcrumb />
     <Section>
       <HeadingTitle>プロフィール</HeadingTitle>
       <div class="card bg-white shadow">
