@@ -14,9 +14,9 @@ const router = useRouter()
 
 <template>
   <Base>
-    <HeadingTitle>メールアドレス入力</HeadingTitle>
-    <Step />
     <Section>
+      <HeadingTitle>メールアドレス入力</HeadingTitle>
+      <Step />
       <Input
         type="text"
         label="メールアドレス"
@@ -31,7 +31,7 @@ const router = useRouter()
       </Information>
       <div>re chapter</div>
       <PrimaryButton @click="router.push({ name: 'auth_confirm' })">
-        <IconWithText icon-class="bi-send"> メールアドレスを送信 </IconWithText>
+        <IconWithText icon-class="bi-send"> メールアドレスを送信</IconWithText>
       </PrimaryButton>
     </Section>
   </Base>

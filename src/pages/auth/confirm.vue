@@ -8,9 +8,9 @@ import Step from '@/components/viewParts/Step'
 
 <template>
   <Base>
-    <HeadingTitle>メールアドレス確認</HeadingTitle>
-    <Step />
     <Section>
+      <HeadingTitle>メールアドレス確認</HeadingTitle>
+      <Step />
       <Information>
         <p>まだアカウントの登録が完了していません。</p>
         <p>ご登録のメールアドレス宛てに確認メールを送信しました。</p>

@@ -6,10 +6,8 @@ import Connection from '@/components/users/Connection'
 
 <template>
   <Base>
-    <div>
-      <Section>
-        <Connection heading-title="フォロー一覧" />
-      </Section>
-    </div>
+    <Section>
+      <Connection heading-title="フォロー一覧" />
+    </Section>
   </Base>
 </template>

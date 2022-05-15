@@ -8,9 +8,9 @@ import Step from '@/components/viewParts/Step'
 
 <template>
   <Base>
-    <HeadingTitle>アカウント登録完了</HeadingTitle>
-    <Step />
     <Section>
+      <HeadingTitle>アカウント登録完了</HeadingTitle>
+      <Step />
       <Information>
         <p>アカウントの登録が完了しました！</p>
         <p>お楽しみください。</p>
