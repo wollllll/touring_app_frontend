@@ -22,7 +22,7 @@ const setShowSpot = (spot) => {
 
 <template>
   <GoogleMap
-    class="relative w-full h-screen"
+    class="relative w-full h-full"
     :api-key="API_KEY"
     :center="center"
     :zoom="15"

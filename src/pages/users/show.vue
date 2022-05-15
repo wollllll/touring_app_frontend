@@ -18,28 +18,26 @@ const setShowSpot = (spot) => {
 
 <template>
   <Base>
-    <div class="">
-      <Section>
-        <HeadingTitle>プロフィール</HeadingTitle>
-        <div class="card bg-white shadow">
-          <div class="card-body">
-            <Profile :show-follow="true" />
-          </div>
+    <Section>
+      <HeadingTitle>プロフィール</HeadingTitle>
+      <div class="card bg-white shadow">
+        <div class="card-body">
+          <Profile :show-follow="true" />
         </div>
-      </Section>
-      <Section>
-        <HeadingTitle>投稿スポット</HeadingTitle>
-        <ul class="lg:grid lg:grid-cols-2">
-          <li
-            :key="spot.id"
-            v-for="spot in spots"
-            class="lg:odd:mr-auto lg:even:ml-auto lg:col-span-1 mb-6"
-            style="width: 98%"
-          >
-            <ShowSpot :spot="spot" @click="setShowSpot(spot)" />
-          </li>
-        </ul>
-      </Section>
-    </div>
+      </div>
+    </Section>
+    <Section>
+      <HeadingTitle>投稿スポット</HeadingTitle>
+      <ul class="lg:grid lg:grid-cols-2">
+        <li
+          :key="spot.id"
+          v-for="spot in spots"
+          class="lg:odd:mr-auto lg:even:ml-auto lg:col-span-1 mb-6"
+          style="width: 98%"
+        >
+          <ShowSpot :spot="spot" @click="setShowSpot(spot)" />
+        </li>
+      </ul>
+    </Section>
   </Base>
 </template>

@@ -5,11 +5,13 @@ import GoogleMap from '@/components/viewParts/GoogleMap'
 </script>
 
 <template>
-  <div class="secondary-bg-color flex flex-col min-h-screen">
-    <Header class="lg:px-40 shadow" />
-    <main class="flex-1">
-      <GoogleMap />
-    </main>
+  <div>
+    <div class="secondary-bg-color flex flex-col h-screen">
+      <Header class="lg:px-40 shadow" />
+      <main class="lg:px-40 grow">
+        <GoogleMap />
+      </main>
+    </div>
     <Modal />
   </div>
 </template>
