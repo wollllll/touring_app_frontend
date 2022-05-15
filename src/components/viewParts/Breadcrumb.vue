@@ -11,7 +11,6 @@ const lastRouteName = Object.keys(getRoutes()).reverse().shift()
         <router-link
           v-if="lastRouteName !== routeName"
           :to="{ name: routeName }"
-          class="opcity-75"
         >
           <span v-if="routeName === 'top'"
             ><i class="bi bi-house-fill" />&nbsp;</span
