@@ -4,7 +4,7 @@ import GoogleLogin from '@/components/buttons/GoogleLogin'
 import LineLogin from '@/components/buttons/LineLogin'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import TwitterLogin from '@/components/buttons/TwitterLogin'
-import Input from '@/components/forms/Input'
+import Input from '@/components/formParts/Input'
 </script>
 
 <template>

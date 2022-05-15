@@ -1,7 +1,8 @@
 <script setup>
 import IconWithText from '@/components/IconWithText'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
-import Input from '@/components/forms/Input'
+import CheckBox from '@/components/formParts/CheckBox'
+import Input from '@/components/formParts/Input'
 import Base from '@/components/modals/Base'
 import CloseButton from '@/components/modals/CloseButton'
 import { storeService } from '@/services/storeService'
@@ -23,20 +24,10 @@ const isShowModal = storeService.getters.isShowSearchModal()
       <p class="font-bold">条件付きで検索</p>
       <div class="lg:grid-cols-5 grid grid-cols-1">
         <div class="lg:col-span-2">
-          <div class="form-control">
-            <label class="label p-0 cursor-pointer">
-              <input type="checkbox" class="checkbox checkbox-primary" />
-              お気に入り
-            </label>
-          </div>
+          <CheckBox>お気に入りスポット</CheckBox>
         </div>
         <div class="lg:col-start-4 lg:col-span-2 lg:mt-0 mt-3">
-          <div class="form-control">
-            <label class="label p-0 cursor-pointer">
-              <input type="checkbox" class="checkbox checkbox-primary" />
-              フォローアカウント
-            </label>
-          </div>
+          <CheckBox>フォローアカウント</CheckBox>
         </div>
       </div>
       <div class="mt-5 text-right">

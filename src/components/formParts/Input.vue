@@ -1,6 +1,6 @@
 <script setup>
-import Base from '@/components/forms/Base'
-import Label from '@/components/forms/Label'
+import Base from '@/components/formParts/Base'
+import Label from '@/components/formParts/Label'
 
 const props = defineProps({
   type: String,
