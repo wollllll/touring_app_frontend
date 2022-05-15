@@ -6,14 +6,10 @@ import CloseButton from '@/components/modals/CloseButton'
 import Profile from '@/components/users/Profile'
 import { spotService } from '@/services/spotService'
 import { storeService } from '@/services/storeService'
-import { onUnmounted, ref } from 'vue'
+import { ref } from 'vue'
 
 const show = ref(spotService.getters.showSpot())
 const isShowModal = storeService.getters.isShowSpotModal()
-
-onUnmounted(() => {
-  storeService.commit.setIsShowSpotModal(false)
-})
 </script>
 
 <template>

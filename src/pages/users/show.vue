@@ -7,23 +7,20 @@ import Profile from '@/components/users/Profile'
 import { spots } from '@/fakers/spots'
 import { spotService } from '@/services/spotService'
 import { storeService } from '@/services/storeService'
-import { onUnmounted, ref } from 'vue'
+import { ref } from 'vue'
 
 const showSpot = ref(spotService.getters.showSpot())
 const setShowSpot = (spot) => {
   spotService.commit.setShowSpot(spot)
   storeService.commit.setIsShowSpotModal(true)
 }
-onUnmounted(() => {
-  spotService.commit.setShowSpot({})
-})
 </script>
 
 <template>
   <Base>
     <div class="xl:px-64 p-5">
       <Section>
-        <HeadingTitle>アカウント</HeadingTitle>
+        <HeadingTitle>プロフィール</HeadingTitle>
         <div class="card bg-white shadow">
           <div class="card-body">
             <Profile :show-follow="true" />

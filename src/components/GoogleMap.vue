@@ -6,7 +6,7 @@ import ShowSpot from '@/components/spots/Show'
 import { spots } from '@/fakers/spots'
 import { spotService } from '@/services/spotService'
 import { storeService } from '@/services/storeService'
-import { onUnmounted, ref } from 'vue'
+import { ref } from 'vue'
 import { GoogleMap, Marker } from 'vue3-google-map'
 
 const API_KEY = process.env.VUE_APP_GOOGLE_MAP_API_KEY
@@ -18,9 +18,6 @@ const setShowSpot = (spot) => {
   center.value = { lat: spot.latitude, lng: spot.longitude }
   spotService.commit.setShowSpot(spot)
 }
-onUnmounted(() => {
-  spotService.commit.setShowSpot({})
-})
 </script>
 
 <template>

@@ -1,8 +1,6 @@
 <script setup>
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Avatar from '@/components/users/Avatar'
-import { storeService } from '@/services/storeService'
-import { onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
@@ -12,9 +10,6 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-})
-onUnmounted(() => {
-  storeService.commit.setIsShowSpotModal(false)
 })
 </script>
 
