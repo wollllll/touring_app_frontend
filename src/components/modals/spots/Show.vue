@@ -24,18 +24,20 @@ const isShowModal = storeService.getters.isShowSpotModal()
     </template>
     <template #content>
       <Carousel />
-      <p class="font-bold">2022-4-30 10:00</p>
-      <p>{{ show.content }}</p>
-      <div class="text-right">
+      <div class="flex justify-between">
+        <div class="flex items-center">
+          <p class="font-bold">2022-4-30 10:00</p>
+        </div>
         <label class="swap">
           <input type="checkbox" />
-          <i class="bi bi-star swap-off sm:text-xl text-2xl fill-current" />
+          <i class="bi bi-star swap-off text-2xl fill-current" />
           <i
-            class="bi bi-star-fill swap-on sm:text-xl text-2xl text-yellow-400 fill-current"
+            class="bi bi-star-fill swap-on text-2xl text-yellow-400 fill-current"
           />
         </label>
       </div>
-      <Profile :show-follow="true" />
+      <p>{{ show.content }}</p>
+      <Profile class="mt-5" :show-follow="true" />
     </template>
   </Base>
 </template>

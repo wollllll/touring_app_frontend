@@ -25,7 +25,7 @@ const APP_NAME = process.env.VUE_APP_APP_NAME
         >
           <i class="bi-search text-xl" />
         </router-link>
-        <div class="dropdown dropdown-end ml-3">
+        <div class="dropdown dropdown-end flex items-center ml-3">
           <Avatar size="w-10" class="btn btn-ghost btn-circle" />
           <ul
             tabindex="0"
