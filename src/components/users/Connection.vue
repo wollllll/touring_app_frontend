@@ -1,6 +1,6 @@
 <script setup>
-import HeadingTitle from '@/components/HeadingTitle'
 import Profile from '@/components/users/Profile'
+import HeadingTitle from '@/components/viewParts/HeadingTitle'
 import users from '@/fakers/users'
 import { useRoute } from 'vue-router'
 

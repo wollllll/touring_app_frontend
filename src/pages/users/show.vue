@@ -1,9 +1,9 @@
 <script setup>
-import HeadingTitle from '@/components/HeadingTitle'
 import Base from '@/components/layouts/Base'
 import Section from '@/components/layouts/Section'
 import ShowSpot from '@/components/spots/Show'
 import Profile from '@/components/users/Profile'
+import HeadingTitle from '@/components/viewParts/HeadingTitle'
 import { spots } from '@/fakers/spots'
 import { spotService } from '@/services/spotService'
 import { storeService } from '@/services/storeService'

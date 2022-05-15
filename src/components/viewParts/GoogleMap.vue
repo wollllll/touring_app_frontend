@@ -1,8 +1,8 @@
 <script setup>
-import IconWithText from '@/components/IconWithText'
 import Information from '@/components/alerts/Information'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import ShowSpot from '@/components/spots/Show'
+import IconWithText from '@/components/viewParts/IconWithText'
 import { spots } from '@/fakers/spots'
 import { spotService } from '@/services/spotService'
 import { storeService } from '@/services/storeService'

@@ -1,9 +1,9 @@
 <script setup>
-import Carousel from '@/components/Carousel'
-import IconWithText from '@/components/IconWithText'
 import Base from '@/components/modals/Base'
 import CloseButton from '@/components/modals/CloseButton'
 import Profile from '@/components/users/Profile'
+import Carousel from '@/components/viewParts/Carousel'
+import IconWithText from '@/components/viewParts/IconWithText'
 import { spotService } from '@/services/spotService'
 import { storeService } from '@/services/storeService'
 import { ref } from 'vue'

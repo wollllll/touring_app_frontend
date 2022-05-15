@@ -1,9 +1,9 @@
 <script setup>
-import HeadingTitle from '@/components/HeadingTitle'
-import Step from '@/components/Step'
 import Information from '@/components/alerts/Information'
 import Base from '@/components/layouts/Base'
 import Section from '@/components/layouts/Section'
+import HeadingTitle from '@/components/viewParts/HeadingTitle'
+import Step from '@/components/viewParts/Step'
 </script>
 
 <template>

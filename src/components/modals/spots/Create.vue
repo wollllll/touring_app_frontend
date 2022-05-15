@@ -1,10 +1,10 @@
 <script setup>
-import IconWithText from '@/components/IconWithText'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Input from '@/components/formParts/Input'
 import TextArea from '@/components/formParts/TextArea'
 import Base from '@/components/modals/Base'
 import CloseButton from '@/components/modals/CloseButton'
+import IconWithText from '@/components/viewParts/IconWithText'
 import { storeService } from '@/services/storeService'
 
 const isShowModal = storeService.getters.isCreateSpotModal()

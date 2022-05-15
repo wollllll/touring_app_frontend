@@ -1,10 +1,10 @@
 <script setup>
-import IconWithText from '@/components/IconWithText'
 import GoogleLogin from '@/components/buttons/GoogleLogin'
 import LineLogin from '@/components/buttons/LineLogin'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import TwitterLogin from '@/components/buttons/TwitterLogin'
 import Input from '@/components/formParts/Input'
+import IconWithText from '@/components/viewParts/IconWithText'
 </script>
 
 <template>

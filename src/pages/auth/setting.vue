@@ -1,8 +1,8 @@
 <script setup>
-import HeadingTitle from '@/components/HeadingTitle'
-import Step from '@/components/Step'
 import Base from '@/components/layouts/Base'
 import UserEdit from '@/components/users/Edit'
+import HeadingTitle from '@/components/viewParts/HeadingTitle'
+import Step from '@/components/viewParts/Step'
 </script>
 
 <template>

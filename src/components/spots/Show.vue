@@ -1,6 +1,6 @@
 <script setup>
-import IconWithText from '@/components/IconWithText'
 import Avatar from '@/components/users/Avatar'
+import IconWithText from '@/components/viewParts/IconWithText'
 
 const props = defineProps({
   spot: Object,

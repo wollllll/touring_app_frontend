@@ -1,9 +1,9 @@
 <script setup>
-import IconWithText from '@/components/IconWithText'
 import PrimaryButton from '@/components/buttons/PrimaryButton'
 import Input from '@/components/formParts/Input'
 import TextArea from '@/components/formParts/TextArea'
 import Avatar from '@/components/users/Avatar'
+import IconWithText from '@/components/viewParts/IconWithText'
 </script>
 
 <template>
