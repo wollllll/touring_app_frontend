@@ -18,7 +18,7 @@ import { storeService } from '@/services/storeService'
       </li>
       <li>
         <router-link :to="{ name: 'auth_index' }">
-          <IconWithText icon-class="bi-person"> addアカウント </IconWithText>
+          <IconWithText icon-class="bi-person"> アカウント作成 </IconWithText>
         </router-link>
       </li>
       <li>
