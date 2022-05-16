@@ -1,18 +1,13 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
-  // アセットはLaravelのpublic/appディレクトリ配下に作成される
-  outputDir: '../backend/public/app',
-
-  // app配下にjs, cssなどが置かれるので、publicPathを調整
-  publicPath: '/app',
-
+  outputDir: '../backend/public/assets',
+  publicPath: '/assets',
   pages: {
-    // appのエントリポイント、テンプレート、出力先を調整
     app: {
       entry: 'src/main.js',
-      template: 'templates/base.html',
-      filename: `../../resources/views/spa/app.blade.php`,
+      template: 'public/index.html',
+      filename: `../../resources/views/app.blade.php`,
     },
   },
 })
