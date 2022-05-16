@@ -21,7 +21,7 @@ const props = defineProps({
           class="flex cursor-pointer"
           @click="router.push({ name: 'user_show', params: { id: 1 } })"
         >
-          <Avatar class="btn btn-ghost btn-circle" />
+          <Avatar size="w-10 h-10" />
           <p class="my-auto ml-3 font-bold">加藤タカヒロ</p>
         </div>
         <div class="flex items-center ml-3">
